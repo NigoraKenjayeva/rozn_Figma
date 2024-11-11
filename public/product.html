@@ -6,14 +6,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        * {
+            font-family: 'inter', sans-serif;
+        }
+    </style>
 </head>
 
 <body class="bg-body_bg">
-    <section class="bg-gradient-to-r from-[#52E259] to-[#43A548] max-w-[1200px] mx-auto">
-        <h4 class="text-white text-[13px] font-normal px-10 pt-5">Главная - <span class="text-black">-
-            Продукты </span></h4>
-        <h2 class="text-white text-[25px] px-10 pb-5 pt-2 font-semibold">Ассортимент продуктового ассортимента</h2>
-    </section>
+    <main class="bg-gradient-to-r from-[#52E259] to-[#43A548]">
+        <section class="max-w-[1200px] mx-auto">
+            <h4 class="text-white text-[13px] font-normal pt-5">Главная - <span class="text-black">Продукты </span></h4>
+            <h2 class="text-white text-[25px] pb-5 pt-2 font-semibold">Продукты</h2>
+        </section>
+    </main>
+    <main class="flex max-w-[1200px] mx-auto justify-between flex-wrap gap-5 my-16">
+        <section class="bg-white p-7 rounded-2xl shadow-box-shadow hover:shadow-box-shadow-hover transition-all">
+            <a href="#" class="bg-grey_gb px-4 py-1 rounded-xl text-[13px] font-semibold text-green_text">Для
+                магазина</a>
+            <div class="flex justify-between items-center">
+                <h2 class="text-green_text font-semibold text-[20px] my-4">1С-Ритейл Чекер</h2>
+                <img src="../assets/svg/forward-right.svg" class="cursor-pointer" alt="forward-right">
+            </div>
+            <div class="p-4 bg-grey_gb rounded-2xl">
+                <p class="text-[13px] font-normal max-w-[500px]">После подключения каждую неделю вам на почту будет
+                    приходить письмо с рекомендациями:</p>
+                <p class="text-[13px] font-normal max-w-[500px]">какие товары необходимо срочно купить, чтобы избежать
+                    упущенной прибыли из-за пустых полок;</p>
+                <p class="text-[13px] font-normal max-w-[500px]">какие товары у вас в избытке, а какие следует отнести к
+                    неликвидам;</p>
+                <p class="text-[13px] font-normal max-w-[500px]">какие товары стоит пересчитать (инвентаризация), чтобы
+                    быть уверенным в правильности учета.</p>
+            </div>
+            <div class="flex items-start gap-2 max-w-[300px] my-2 text-grey-text">
+                <img src="../assets/svg/circle.svg" class="mt-[5px]" alt="circle-logo">
+                <h3 class="text-[13px] font-normal">Дашборд (индикаторы по управлению ассортиментом)</h3>
+            </div>
+            <div class="flex items-center gap-2 max-w-[300px] text-grey-text">
+                <img src="../assets/svg/circle.svg" alt="circle-logo">
+                <h3 class="text-[13px] font-normal">Рекомендации по всем товарам</h3>
+            </div>
+            <div class="flex items-end justify-between">
+                <div
+                    class="bg-[#4ae552] w-fit h-fit py-2 px-4 cursor-pointer rounded-3xl text-white text-[13px] hover:bg-gradient-to-r from-[#43A548] to-[#52E259]">
+                    Узнать стоимость</div>
+                <img src="../assets/image/card_first.png" class="w-[200px]" alt="card_first">
+            </div>
+        </section>
+        <section class="bg-white p-7 rounded-2xl shadow-box-shadow hover:shadow-box-shadow-hover transition-all">
+            <a href="#" class="bg-grey_gb px-4 py-1 rounded-xl text-[13px] font-semibold text-green_text">Для
+                магазина</a>
+            <div class="flex justify-between items-center">
+                <h2 class="text-green_text font-semibold text-[20px] my-4">1С-Ритейл Чекер</h2>
+                <img src="../assets/svg/forward-right.svg" class="cursor-pointer" alt="forward-right">
+            </div>
+            <div class="p-4 bg-grey_gb rounded-2xl">
+                <p class="text-[13px] font-normal max-w-[500px]">После подключения каждую неделю вам на почту будет
+                    приходить письмо с рекомендациями:</p>
+                <p class="text-[13px] font-normal max-w-[500px]">какие товары необходимо срочно купить, чтобы избежать
+                    упущенной прибыли из-за пустых полок;</p>
+                <p class="text-[13px] font-normal max-w-[500px]">какие товары у вас в избытке, а какие следует отнести к
+                    неликвидам;</p>
+                <p class="text-[13px] font-normal max-w-[500px]">какие товары стоит пересчитать (инвентаризация), чтобы
+                    быть уверенным в правильности учета.</p>
+            </div>
+            <div class="flex items-start gap-2 max-w-[300px] my-2 text-grey-text">
+                <img src="../assets/svg/circle.svg" class="mt-[5px]" alt="circle-logo">
+                <h3 class="text-[13px] font-normal">Дашборд (индикаторы по управлению ассортиментом)</h3>
+            </div>
+            <div class="flex items-center gap-2 max-w-[300px] text-grey-text">
+                <img src="../assets/svg/circle.svg" alt="circle-logo">
+                <h3 class="text-[13px] font-normal">Рекомендации по всем товарам</h3>
+            </div>
+            <div class="flex items-end justify-between">
+                <div
+                    class="bg-[#4ae552] w-fit h-fit py-2 px-4 cursor-pointer rounded-3xl text-white text-[13px] hover:bg-gradient-to-r from-[#43A548] to-[#52E259]">
+                    Узнать стоимость</div>
+                <img src="../assets/image/card_first.png" class="w-[200px]" alt="card_first">
+            </div>
+        </section>
+        <section class="bg-white p-7 rounded-2xl shadow-box-shadow hover:shadow-box-shadow-hover transition-all">
+            <a href="#" class="bg-grey_gb px-4 py-1 rounded-xl text-[13px] font-semibold text-green_text">Для
+                магазина</a>
+            <div class="flex justify-between items-center">
+                <h2 class="text-green_text font-semibold text-[20px] my-4">1С-Ритейл Чекер</h2>
+                <img src="../assets/svg/forward-right.svg" class="cursor-pointer" alt="forward-right">
+            </div>
+            <div class="p-4 bg-grey_gb rounded-2xl">
+                <p class="text-[13px] font-normal max-w-[500px]">После подключения каждую неделю вам на почту будет
+                    приходить письмо с рекомендациями:</p>
+                <p class="text-[13px] font-normal max-w-[500px]">какие товары необходимо срочно купить, чтобы избежать
+                    упущенной прибыли из-за пустых полок;</p>
+                <p class="text-[13px] font-normal max-w-[500px]">какие товары у вас в избытке, а какие следует отнести к
+                    неликвидам;</p>
+                <p class="text-[13px] font-normal max-w-[500px]">какие товары стоит пересчитать (инвентаризация), чтобы
+                    быть уверенным в правильности учета.</p>
+            </div>
+            <div class="flex items-start gap-2 max-w-[300px] my-2 text-grey-text">
+                <img src="../assets/svg/circle.svg" class="mt-[5px]" alt="circle-logo">
+                <h3 class="text-[13px] font-normal">Дашборд (индикаторы по управлению ассортиментом)</h3>
+            </div>
+            <div class="flex items-center gap-2 max-w-[300px] text-grey-text">
+                <img src="../assets/svg/circle.svg" alt="circle-logo">
+                <h3 class="text-[13px] font-normal">Рекомендации по всем товарам</h3>
+            </div>
+            <div class="flex items-end justify-between">
+                <div
+                    class="bg-[#4ae552] w-fit h-fit py-2 px-4 cursor-pointer rounded-3xl text-white text-[13px] hover:bg-gradient-to-r from-[#43A548] to-[#52E259]">
+                    Узнать стоимость</div>
+                <img src="../assets/image/card_first.png" class="w-[200px]" alt="card_first">
+            </div>
+        </section>
+        <section class="bg-white p-7 rounded-2xl shadow-box-shadow hover:shadow-box-shadow-hover transition-all">
+            <a href="#" class="bg-grey_gb px-4 py-1 rounded-xl text-[13px] font-semibold text-green_text">Для
+                магазина</a>
+            <div class="flex justify-between items-center">
+                <h2 class="text-green_text font-semibold text-[20px] my-4">1С-Ритейл Чекер</h2>
+                <img src="../assets/svg/forward-right.svg" class="cursor-pointer" alt="forward-right">
+            </div>
+            <div class="p-4 bg-grey_gb rounded-2xl">
+                <p class="text-[13px] font-normal max-w-[500px]">После подключения каждую неделю вам на почту будет
+                    приходить письмо с рекомендациями:</p>
+                <p class="text-[13px] font-normal max-w-[500px]">какие товары необходимо срочно купить, чтобы избежать
+                    упущенной прибыли из-за пустых полок;</p>
+                <p class="text-[13px] font-normal max-w-[500px]">какие товары у вас в избытке, а какие следует отнести к
+                    неликвидам;</p>
+                <p class="text-[13px] font-normal max-w-[500px]">какие товары стоит пересчитать (инвентаризация), чтобы
+                    быть уверенным в правильности учета.</p>
+            </div>
+            <div class="flex items-start gap-2 max-w-[300px] my-2 text-grey-text">
+                <img src="../assets/svg/circle.svg" class="mt-[5px]" alt="circle-logo">
+                <h3 class="text-[13px] font-normal">Дашборд (индикаторы по управлению ассортиментом)</h3>
+            </div>
+            <div class="flex items-center gap-2 max-w-[300px] text-grey-text">
+                <img src="../assets/svg/circle.svg" alt="circle-logo">
+                <h3 class="text-[13px] font-normal">Рекомендации по всем товарам</h3>
+            </div>
+            <div class="flex items-end justify-between">
+                <div
+                    class="bg-[#4ae552] w-fit h-fit py-2 px-4 cursor-pointer rounded-3xl text-white text-[13px] hover:bg-gradient-to-r from-[#43A548] to-[#52E259]">
+                    Узнать стоимость</div>
+                <img src="../assets/image/card_first.png" class="w-[200px]" alt="card_first">
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
