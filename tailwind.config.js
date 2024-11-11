@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        green_bg: "#43A548",
+        "green_bg": "#43A548",
+        "body_bg" : "#F7F8F8"
       },
       textColor:{
         'black-text': "#2C2B35",
