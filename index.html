@@ -3,10 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/svg/Figma-logo.svg">
     <title>Rozn</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
-<body>
-    <h1 class="text-red-600">sasfafasfasf</h1>
+<body class="bg-[#F7F8F8]">
+    <header class="bg-[#FFFFFF] shadow-lg  ">
+        <div class="bg-transparent container max-w-[1400px] mx-auto flex items-center justify-between px-5 py-5 ">
+            <div>
+                <a href="/index.html">
+                    <div class="flex items-center gap-2">
+                        <img src="/assets/svg/image 1.svg" alt="dowland">
+                        <span class="font-semibold text-xl">1С-Товары</span>
+                    </div>
+                </a>
+            </div>
+            <div class="lg:flex gap-7 items-center sm:block hidden">
+                <a class="hover:text-[#43A548] transition-all duration-300" href="">Как это работает</a>
+                <a class="hover:text-[#43A548] transition-all duration-300" href="">Инструкции</a>
+                <a class="hover:text-[#43A548] transition-all duration-300" href="">Продукты</a>
+                <a class="hover:text-[#43A548] transition-all duration-300" href="">База знаний </a>
+                <a class="hover:text-[#43A548] transition-all duration-300" href="">О нас</a>
+                <a href="/index.html">
+                    <button class="w-[72px] h-[40px] text-white font-semibold shadow-lg hover:shadow-2xl rounded-full bg-gradient-to-r from-green-600  to-green-400 hover:from-green-400 hover:to-blue-500 transition-all duration-300">
+                        Вход
+                    </button>
+                </a>
+            </div>
+            <button id="menu-toggle" class="lg:hidden p-2 text-gray-600 hover:text-green-500 transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    
+        <div id="mobile-menu" class="lg:hidden fixed top-0 left-0 w-full h-full bg-white shadow-md transform -translate-x-full transition-transform duration-300">
+            <div class="flex flex-col items-center py-5">
+                <a class="py-2 text-lg text-gray-700 hover:text-[#43A548]" href="#">Как это работает</a>
+                <a class="py-2 text-lg text-gray-700 hover:text-[#43A548]" href="#">Инструкции</a>
+                <a class="py-2 text-lg text-gray-700 hover:text-[#43A548]" href="#">Продукты</a>
+                <a class="py-2 text-lg text-gray-700 hover:text-[#43A548]" href="#">База знаний</a>
+                <a class="py-2 text-lg text-gray-700 hover:text-[#43A548]" href="#">О нас</a>
+                <a  href="/index.html">
+                    <button class="w-[150px] flex items-center justify-center  gap-5 h-[40px] text-white font-semibold shadow-lg hover:shadow-2xl rounded-full bg-gradient-to-r from-green-600 to-green-400 hover:from-green-400 hover:to-blue-500 transition-all duration-300 mt-5">
+                        Вход
+                        <img src="/assets/svg/reshot-icon-arrow-right-LA2EJ39WDT.svg" alt="dowland">
+                    </button>
+                </a>
+            </div>
+        </div>   
+    </header> 
+    <main class="bg-[#FFFFFF]">
+        <div class="bg-transparent container max-w-[1400px] mx-auto pl-5  sm:flex sm:items-center sm:justify-between  pt-12 flex flex-col justify-center items-center ">
+            <div class="flex flex-col gap-4">
+                <div class="sm:text-4xl font-semibold flex flex-col gap-2 text-2xl">
+                    <h1>Управление запасами </h1>
+                    <h1>розничного магазина</h1>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <p>Использование сервиса 1С-Товары позволяет значительно </p>
+                    <p>упростить работу по формированию заявок поставщику.</p>
+                </div>
+                <div>
+                    <a href="/index.html">
+                        <button class="w-[250px] h-[40px] text-white font-semibold shadow-lg hover:shadow-2xl rounded-full bg-gradient-to-r from-green-600  to-green-400 hover:from-green-400 hover:to-blue-500 transition-all duration-300">
+                            Вход
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="pt-10 mr-10">
+                <img src="/assets/image/Grocery shopping-amico 2.png" alt="dowland">
+            </div>
+        </div>
+    </main>   
+    <section></section>
+    <script src="/js/script.js"></script>
 </body>
 </html>

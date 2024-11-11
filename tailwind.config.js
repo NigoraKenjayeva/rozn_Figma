@@ -6,7 +6,10 @@ module.exports = {
       backgroundColor: {
         green_bg: "#43A548",
       },
+      boxGradient:{
+        'btn-gradient': 'linear-gradient(100.98deg, #43A548 -4.14%, #52E259 108.69%);'
+      },
     },
+    plugins: [],
   },
-  plugins: [],
 };
