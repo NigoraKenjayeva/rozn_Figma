@@ -1,0 +1,7 @@
+.active {
+    max-height: 300px;
+}
+.faq {
+    max-width: 600px;
+    cursor: pointer;
+}

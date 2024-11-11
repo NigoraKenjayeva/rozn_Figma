@@ -10,3 +10,13 @@ menuToggle.addEventListener('click', () => {
         mobileMenu.classList.add('-translate-x-full');
     }
 });
+
+
+// This codes is Accordions
+const faqs = document.querySelector('.faq');
+
+faqs.forEach(faq => {
+    faq.addEventListener('click', () => {
+        faq.classList.toggle('active');
+    });
+})
