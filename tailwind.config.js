@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
+        "grey-section": '#2C2B35',
         green_bg: "#43A548",
         body_bg: "#F7F8F8",
         grey_gb: "#EBF5EB",
