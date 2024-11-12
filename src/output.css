@@ -714,6 +714,10 @@ video {
   height: 100%;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -761,6 +765,10 @@ video {
 
 .w-\[320px\] {
   width: 320px;
+}
+
+.w-\[85\%\] {
+  width: 85%;
 }
 
 .max-w-\[1400px\] {
@@ -817,6 +825,22 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -869,6 +893,10 @@ video {
   gap: 1.75rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -914,6 +942,15 @@ video {
 .border-green-600 {
   --tw-border-opacity: 1;
   border-color: rgb(22 163 74 / var(--tw-border-opacity));
+}
+
+.border-\[\] {
+  border-color: ;
+}
+
+.border-green-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(21 128 61 / var(--tw-border-opacity));
 }
 
 .bg-\[\#4ae552\] {
@@ -1002,6 +1039,12 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-\[\#EBF5EB\] {
+  --tw-gradient-from: #EBF5EB var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(235 245 235 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-\[\#43A548\] {
   --tw-gradient-to: #43A548 var(--tw-gradient-to-position);
 }
@@ -1016,6 +1059,10 @@ video {
 
 .to-\[\] {
   --tw-gradient-to:  var(--tw-gradient-to-position);
+}
+
+.to-\[\#EFFBF0\] {
+  --tw-gradient-to: #EFFBF0 var(--tw-gradient-to-position);
 }
 
 .p-2 {
@@ -1288,6 +1335,11 @@ video {
 
 .text-\[\] {
   color: ;
+}
+
+.text-\[\#43A548\] {
+  --tw-text-opacity: 1;
+  color: rgb(67 165 72 / var(--tw-text-opacity));
 }
 
 .shadow-box-shadow {

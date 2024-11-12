@@ -16,6 +16,55 @@
 </head>
 
 <body class="bg-body_bg">
+    <header class="bg-[#FFFFFF] shadow-lg">
+        <div class="bg-transparent container max-w-[1400px] mx-auto flex items-center justify-between px-5 py-5 ">
+            <div>
+                <a href="/index.html">
+                    <div class="flex items-center gap-2">
+                        <img src="/assets/svg/image 1.svg" alt="dowland">
+                        <span class="font-semibold text-xl">1С-Товары</span>
+                    </div>
+                </a>
+            </div>
+            <div class="md:flex gap-7 items-center hidden">
+                <a class="hover:text-[#43A548] transition-all duration-300" href="">Как это работает</a>
+                <a class="hover:text-[#43A548] transition-all duration-300" href="">Инструкции</a>
+                <a class="hover:text-[#43A548] transition-all duration-300" href="">Продукты</a>
+                <a class="hover:text-[#43A548] transition-all duration-300" href="">База знаний </a>
+                <a class="hover:text-[#43A548] transition-all duration-300" href="">О нас</a>
+                <a href="/index.html">
+                    <button
+                        class="w-[150px] h-[40px] text-white font-semibold shadow-lg hover:shadow-2xl rounded-full bg-gradient-to-r from-green-600  to-green-400 hover:from-green-700 hover:to-green-500 transition-all duration-300">
+                        Вход
+                    </button>
+                </a>
+            </div>
+            <button id="menu-toggle"
+                class="md:hidden p-2 text-gray-600 hover:text-green-500 transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="md:hidden fixed top-0 left-0 w-full h-full bg-white shadow-md transform -translate-x-full transition-transform duration-300">
+            <div class="flex flex-col items-center py-5">
+                <a class="py-2 text-lg text-gray-700 hover:text-[#43A548]" href="#">Как это работает</a>
+                <a class="py-2 text-lg text-gray-700 hover:text-[#43A548]" href="#">Инструкции</a>
+                <a class="py-2 text-lg text-gray-700 hover:text-[#43A548]" href="#">Продукты</a>
+                <a class="py-2 text-lg text-gray-700 hover:text-[#43A548]" href="#">База знаний</a>
+                <a class="py-2 text-lg text-gray-700 hover:text-[#43A548]" href="#">О нас</a>
+                <a href="/index.html">
+                    <button
+                        class="w-[250px] h-[40px] text-white font-semibold shadow-lg hover:shadow-2xl rounded-full bg-gradient-to-r from-green-600  to-green-400 hover:from-green-700 hover:to-green-500 transition-all duration-300">
+                        Вход
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
     <main class="bg-gradient-to-r from-[#52E259] to-[#43A548]">
         <section class="max-w-[1400px] mx-auto">
             <h4 class="text-white text-[13px] font-normal pt-5">Главная - <span class="text-black">Продукты </span></h4>
@@ -23,7 +72,8 @@
         </section>
     </main>
     <main class="flex max-w-[1400px] mx-auto xl:justify-between justify-center flex-wrap gap-5 my-16">
-        <section class="bg-white p-7 rounded-2xl shadow-box-shadow hover:shadow-box-shadow-hover transition-all duration-[0.5s]">
+        <section
+            class="bg-white p-7 rounded-2xl shadow-box-shadow hover:shadow-box-shadow-hover transition-all duration-[0.5s]">
             <a href="#" class="bg-grey_gb px-4 py-1 rounded-xl text-[13px] font-semibold text-green_text">Для
                 магазина</a>
             <div class="flex justify-between items-center">
@@ -55,7 +105,8 @@
                 <img src="../assets/image/card_first.png" class="w-[200px]" alt="card_first">
             </div>
         </section>
-        <section class="bg-white p-7 rounded-2xl shadow-box-shadow hover:shadow-box-shadow-hover transition-all duration-[0.5s]">
+        <section
+            class="bg-white p-7 rounded-2xl shadow-box-shadow hover:shadow-box-shadow-hover transition-all duration-[0.5s]">
             <a href="#" class="bg-grey_gb px-4 py-1 rounded-xl text-[13px] font-semibold text-green_text">Для
                 магазина</a>
             <div class="flex justify-between items-center">
@@ -87,7 +138,8 @@
                 <img src="../assets/image/card_second.png" class="w-[200px]" alt="card_first">
             </div>
         </section>
-        <section class="bg-white p-7 rounded-2xl shadow-box-shadow hover:shadow-box-shadow-hover transition-all duration-[0.5s]">
+        <section
+            class="bg-white p-7 rounded-2xl shadow-box-shadow hover:shadow-box-shadow-hover transition-all duration-[0.5s]">
             <a href="#" class="bg-grey_gb px-4 py-1 rounded-xl text-[13px] font-semibold text-green_text">Для
                 магазина</a>
             <div class="flex justify-between items-center">
@@ -119,7 +171,8 @@
                 <img src="../assets/image/card_third.png" class="w-[200px]" alt="card_first">
             </div>
         </section>
-        <section class="bg-white p-7 rounded-2xl shadow-box-shadow hover:shadow-box-shadow-hover transition-all duration-[0.5s]">
+        <section
+            class="bg-white p-7 rounded-2xl shadow-box-shadow hover:shadow-box-shadow-hover transition-all duration-[0.5s]">
             <a href="#" class="bg-grey_gb px-4 py-1 rounded-xl text-[13px] font-semibold text-green_text">Для
                 магазина</a>
             <div class="flex justify-between items-center">
@@ -153,7 +206,8 @@
         </section>
     </main>
     <main class="bg-grey-section">
-        <section class="flex lg:flex-row flex-col lg:justify-between justify-center lg:items-stretch gap-2 items-center mx-auto max-w-[1400px] py-10">
+        <section
+            class="flex lg:flex-row flex-col lg:justify-between justify-center lg:items-stretch gap-2 items-center mx-auto max-w-[1400px] py-10">
             <div class="flex flex-col justify-between">
                 <h3 class="text-white max-w-[300px] text-[20px]">Почему предприниматели выбирают 1С-Товары?</h3>
                 <img src="../assets/image/search-section.png" class="max-w-[300px]" alt="search-section">
@@ -182,7 +236,8 @@
             <div class="flex flex-col gap-3">
                 <div class="bg-white p-5 rounded-2xl">
                     <h4 class="max-w-[500px] font-semibold mb-2">Управление и анализ работы магазина</h4>
-                    <p class="max-w-[500px] text-[13px] text-[#2C2B35]">онятные отчеты (доступны с любого устройства через Интернет) помогут оценить эффективность
+                    <p class="max-w-[500px] text-[13px] text-[#2C2B35]">онятные отчеты (доступны с любого устройства
+                        через Интернет) помогут оценить эффективность
                         использования ресурсов магазина:
                         анализ выручки (по дням, часам, видам оплат, средний чек);
                         анализ товарных остатков и оборотов (самые продаваемые товары, оборачиваемость, продажи по
@@ -192,10 +247,12 @@
                 </div>
                 <div class="bg-white py-6 px-5 rounded-2xl">
                     <h4 class="max-w-[500px] font-semibold mb-2">Планирование поставок товаров</h4>
-                    <p class="max-w-[500px] text-[13px] text-[#2C2B35]">Система прогноза спроса поможет обеспечить постоянное наличие на полках магазинов ходового
+                    <p class="max-w-[500px] text-[13px] text-[#2C2B35]">Система прогноза спроса поможет обеспечить
+                        постоянное наличие на полках магазинов ходового
                         товара, а также контролировать остатки на складе.</p>
                 </div>
-                <div class="cursor-pointer bg-gradient-to-r to-[#43A548] from-[#52E259] py-7 px-5 flex justify-between items-center text-white rounded-2xl">
+                <div
+                    class="cursor-pointer bg-gradient-to-r to-[#43A548] from-[#52E259] py-7 px-5 flex justify-between items-center text-white rounded-2xl">
                     Получить 1 месяц бесплатно
                     <img src="../assets/svg/forward-rightt.svg" alt="">
                 </div>
