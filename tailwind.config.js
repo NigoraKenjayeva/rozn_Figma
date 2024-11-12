@@ -5,9 +5,10 @@ module.exports = {
     extend: {
       backgroundColor: {
         "grey-section": '#2C2B35',
-        green_bg: "#43A548",
-        body_bg: "#F7F8F8",
-        grey_gb: "#EBF5EB",
+        "green_bg": "#43A548",
+        "body_bg": "#F7F8F8",
+        "grey_gb": "#EBF5EB",
+        "green_bg-card": "#D1F7D3",
       },
       textColor: {
         green_text: "#43A548",
