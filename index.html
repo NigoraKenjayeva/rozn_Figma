@@ -8,35 +8,34 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body class="bg-[#F7F8F8]">
-    <header class="bg-[#FFFFFF] shadow-lg  ">
-        <div class="bg-transparent container max-w-[1400px] mx-auto flex items-center justify-between px-11 py-5 fixed top-0 z-40  ">
-            <div>
-                <a href="/index.html">
-                    <div class="flex items-center gap-2">
-                        <img src="/assets/svg/image 1.svg" alt="dowland">
-                        <span class="font-semibold text-xl">1С-Товары</span>
-                    </div>
-                </a>
-            </div>
-            <div class="lg:flex gap-7 items-center md:block hidden">
-                <a class="hover:text-[#43A548] transition-all duration-300" href="">Как это работает</a>
-                <a class="hover:text-[#43A548] transition-all duration-300" href="">Инструкции</a>
-                <a class="hover:text-[#43A548] transition-all duration-300" href="">Продукты</a>
-                <a class="hover:text-[#43A548] transition-all duration-300" href="">База знаний </a>
-                <a class="hover:text-[#43A548] transition-all duration-300" href="">О нас</a>
-                <a href="/index.html">
-                    <button class="w-[150px] h-[40px] text-white font-semibold shadow-lg hover:shadow-2xl rounded-full bg-gradient-to-r from-green-600  to-green-400 hover:from-green-700 hover:to-green-500 transition-all duration-300">
-                        Вход
-                    </button>
-                </a>
-            </div>
-            <button id="menu-toggle" class="md:hidden flex p-2 text-gray-600 hover:text-green-500 transition-all duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-            </button>
-        </div>
-    
+    <header class="bg-[#FFFFFF] shadow-lg md:fixed top-0 z-40 transition-all pl-16  w-[100%]   h-[100px] pt-7 pb-5">
+            <div class="bg-transparent container max-w-[1400px] mx-auto flex items-center justify-between   ">
+                <div>
+                    <a href="/index.html">
+                        <div class="flex items-center gap-2">
+                            <img src="/assets/svg/image 1.svg" alt="dowland">
+                            <span class="font-semibold text-xl">1С-Товары</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="lg:flex gap-7 items-center md:block hidden">
+                    <a class="hover:text-[#43A548] transition-all duration-300" href="">Как это работает</a>
+                    <a class="hover:text-[#43A548] transition-all duration-300" href="">Инструкции</a>
+                    <a class="hover:text-[#43A548] transition-all duration-300" href="/public/product.html">Продукты</a>
+                    <a class="hover:text-[#43A548] transition-all duration-300" href="">База знаний </a>
+                    <a class="hover:text-[#43A548] transition-all duration-300" href="">О нас</a>
+                    <a href="/index.html">
+                        <button class="w-[150px] h-[40px] text-white font-semibold shadow-lg hover:shadow-2xl rounded-full bg-gradient-to-r from-green-600  to-green-400 hover:from-green-700 hover:to-green-500 transition-all duration-300">
+                            Вход
+                        </button>
+                    </a>
+                </div>
+                <button id="menu-toggle" class="md:hidden flex p-2 text-gray-600 hover:text-green-500 transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>    
         <div id="mobile-menu" class="lg:hidden fixed top-0 left-0 w-full h-full bg-white shadow-md transform -translate-x-full transition-transform duration-300">
             <div class="flex flex-col items-center py-5">
                 <a class="py-2 text-lg text-gray-700 hover:text-[#43A548]" href="#">Как это работает</a>
@@ -53,7 +52,7 @@
         </div>   
     </header> 
     <main class="bg-[#FFFFFF]">
-        <div class="bg-transparent container max-w-[1400px] mx-auto pl-5 xl:flex justify-center items-center sm:flex sm:items-center sm:justify-between px-11 pt-12  ">
+        <div class="bg-transparent container max-w-[1400px] mx-auto pl-2 xl:flex justify-center w-[90%] items-center sm:flex sm:items-center sm:justify-between  pt-12 px-10  ">
             <div class="flex flex-col gap-4">
                 <div class="sm:text-4xl font-semibold flex flex-col gap-2 text-2xl">
                     <h1>Управление запасами </h1>
@@ -77,7 +76,7 @@
         </div>
     </main>   
     <section>
-        <div class="bg-transparent container max-w-[1400px] mx-auto pl flex justify-between pt-10 pb-10 flex-wrap px-10 ">
+        <div class="bg-transparent container max-w-[1400px] mx-auto pl flex justify-between pt-10 pb-10 flex-wrap  px-10">
             <div class="flex flex-col  gap-5 px-10 py-10 bg-white sm:w-[600px]    rounded-2xl w-[300px] mb-10 hover:shadow-2xl ">
                 <div class="flex items-center gap-3">
                     <img class="animate-bounce" src="/assets/svg/Frame 317.svg" alt="dowland">
@@ -115,7 +114,7 @@
         </div>
     </section>
     <section>
-        <div class="bg-transparent container max-w-[1400px] mx-auto pl flex justify-between pt-10 pb-10 flex-wrap px-14 ">
+        <div class="bg-transparent container max-w-[1400px] mx-auto pl flex justify-between pt-10 pb-10 flex-wrap px-10  ">
             <div class="flex flex-col  gap-5 px-10 py-10 bg-white rounded-2xl w-[400px] mb-10 hover:shadow-2xl ">
                 <div class="flex items-center gap-3">
                     <img class="animate-bounce" src="/assets/svg/Frame 317 (2).svg" alt="dowland">
@@ -170,7 +169,7 @@
         </div>
     </section>
     <section>
-        <div class="bg-transparent container max-w-[1400px] mx-auto pl flex justify-between pt-10 pb-10 flex-wrap px-14 ">
+        <div class="bg-transparent container max-w-[1400px] mx-auto pl flex justify-between pt-10 pb-10 flex-wrap px-10 ">
             <div class="flex flex-col  gap-5 px-10 py-10 bg-white sm:w-[600px] rounded-2xl w-[300px] mb-10  hover:shadow-2xl ">
                 <div class="flex items-center gap-3">
                     <img class="animate-bounce" src="/assets/svg/Frame 317 (5).svg" alt="dowland">
@@ -207,8 +206,8 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="bg-transparent container max-w-[1400px] mx-auto md:flex items-center md:w-[85%] rounded-3xl mb-10  h-[90px] justify-between px-10 shadow-lg hover:shadow-2xl pt-10 pb-10 bg-gradient-to-r from-[#EBF5EB]  to-[#EFFBF0]  sm:block hidden">
+    <section class="px-5">
+        <div class="bg-transparent container max-w-[1400px] mx-auto md:flex items-center  md:w-[88%] rounded-3xl mb-10  h-[90px] justify-between  shadow-lg hover:shadow-2xl px-10 py-10  bg-gradient-to-r from-[#EBF5EB]  to-[#EFFBF0]  sm:block hidden">
             <div class="flex items-center gap-6">
                 <img src="/assets/svg/gift-01.svg" alt="dowland">
                 <p class="text-xl font-semibold text-[#43A548]">Подключи любой продукт на 1 месяц бесплатно и оцени наши приемущества</p>
@@ -242,7 +241,7 @@
         </div>
     </section>
     <section>
-        <div class="md:flex md:justify-between bg-transparent container max-w-[1400px] mx-auto px-11">
+        <div class="md:flex md:justify-between bg-transparent container max-w-[1400px] mx-auto flex-wrap px-10">
             <div class="flex flex-col  hover:shadow-2xl md:w-[500px] mb-10 pb-3 rounded-3xl bg-white  ">
                 <div>
                     <p class="md:text-3xl font-bold  mb-6 mt-6  text-center">Без 1С-Товары</p>
@@ -317,6 +316,7 @@
             </div>
         </div>
     </section>
+
     <script src="/js/script.js"></script>
 </body>
 </html>
