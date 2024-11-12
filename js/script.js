@@ -12,11 +12,3 @@ menuToggle.addEventListener('click', () => {
 });
 
 
-// This codes is Accordions
-const faqs = document.querySelector('.faq');
-
-faqs.forEach(faq => {
-    faq.addEventListener('click', () => {
-        faq.classList.toggle('active');
-    });
-})
