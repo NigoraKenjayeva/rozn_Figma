@@ -1364,6 +1364,10 @@ video {
     display: block;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:max-w-\[480px\] {
     max-width: 480px;
   }
