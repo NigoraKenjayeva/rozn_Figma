@@ -1493,6 +1493,10 @@ video {
     margin-right: 1rem;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:max-w-\[\] {
     max-width: ;
   }
