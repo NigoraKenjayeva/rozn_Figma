@@ -1,3 +1,6 @@
+header {
+    z-index: 1000;
+}
 .active-position {
   top: 0;
 }
@@ -12,7 +15,19 @@
   border-radius: 20px;
 }
 .card_first {
+  position: sticky;
+  z-index: 0;
   animation: card 1s infinite alternate;
+}
+.scrol::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scrol::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.467);
+}
+.scrol::-webkit-scrollbar-track {
+  background: rgba(128, 128, 128, 0.281);
 }
 @keyframes card {
   0% {
@@ -23,6 +38,6 @@
   }
 }
 .swiper {
-  width: 460px;
+  width: 500px;
   height: 300px;
 }
