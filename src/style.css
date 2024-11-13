@@ -11,3 +11,14 @@
   background: linear-gradient(#52e259, #43a548);
   border-radius: 20px;
 }
+.card_first {
+  animation: card 1s infinite alternate;
+}
+@keyframes card {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
