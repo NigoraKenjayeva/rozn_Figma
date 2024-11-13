@@ -15,10 +15,14 @@
   animation: card 1s infinite alternate;
 }
 @keyframes card {
-    0% {
-        transform: translateY(10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.swiper {
+  width: 460px;
+  height: 300px;
 }
