@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../src/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
@@ -16,31 +17,36 @@
 </head>
 
 <body class="bg-body_bg">
-    <header class="bg-[#FFFFFF] shadow-lg">
+    <header class="bg-[#FFFFFF]">
         <div class="bg-transparent container max-w-[1400px] mx-auto flex items-center justify-between px-5 py-5 ">
             <div>
                 <a href="/index.html">
                     <div class="flex items-center gap-2">
-                        <img src="/assets/svg/image 1.svg" alt="dowland">
-                        <span class="font-semibold text-xl">1С-Товары</span>
+                        <img src="/assets/svg/image 1.svg" class="md:h-[30px] h-[20px]" alt="dowland">
+                        <span class="font-semibold md:text-[19px] text-[15px]">1С-Товары</span>
                     </div>
                 </a>
             </div>
             <div class="md:flex gap-7 items-center hidden">
-                <a class="hover:text-[#43A548] transition-all duration-300" href="">Как это работает</a>
-                <a class="hover:text-[#43A548] transition-all duration-300" href="">Инструкции</a>
-                <a class="hover:text-[#43A548] transition-all duration-300" href="">Продукты</a>
-                <a class="hover:text-[#43A548] transition-all duration-300" href="">База знаний </a>
-                <a class="hover:text-[#43A548] transition-all duration-300" href="">О нас</a>
+                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]" href="#">Как
+                    это работает</a>
+                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]"
+                    href="#">Инструкции</a>
+                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]"
+                    href="#">Продукты</a>
+                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]" href="#">База
+                    знаний </a>
+                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]" href="#">О
+                    нас</a>
                 <a href="/index.html">
                     <button
-                        class="w-[150px] h-[40px] text-white font-semibold shadow-lg hover:shadow-2xl rounded-full bg-gradient-to-r from-green-600  to-green-400 hover:from-green-700 hover:to-green-500 transition-all duration-300">
+                        class="lg:w-[150px] lg:h-[40px] w-[100px] h-[35px] lg:text-[18px] text-[15px] text-white font-semibold shadow-lg hover:shadow-2xl rounded-full bg-gradient-to-r from-green-600  to-green-400 hover:from-green-700 hover:to-green-500 transition-all duration-300">
                         Вход
                     </button>
                 </a>
             </div>
             <button id="menu-toggle"
-                class="md:hidden p-2 text-gray-600 hover:text-green-500 transition-all duration-300">
+                class="md:hidden flex p-2 text-gray-600 hover:text-green-500 transition-all duration-300">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -49,8 +55,15 @@
         </div>
 
         <div id="mobile-menu"
-            class="md:hidden fixed top-0 left-0 w-full h-full bg-white shadow-md transform -translate-x-full transition-transform duration-300">
+            class="fixed top-[-500px] left-0 flex justify-center items-center w-full h-[500px] bg-white shadow-md duration-300">
             <div class="flex flex-col items-center py-5">
+                <div class="close cursor-pointer absolute top-5 right-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
+                        <path
+                            d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+                        </path>
+                    </svg>
+                </div>
                 <a class="py-2 text-lg text-gray-700 hover:text-[#43A548]" href="#">Как это работает</a>
                 <a class="py-2 text-lg text-gray-700 hover:text-[#43A548]" href="#">Инструкции</a>
                 <a class="py-2 text-lg text-gray-700 hover:text-[#43A548]" href="#">Продукты</a>
@@ -273,7 +286,7 @@
     </main>
     <main>
         <section class="mx-auto max-w-[1400px]">
-            <h3 class="my-6 lg:mx-0 mx-10 font-semibold text-[25px]">Компании которые выбирают 1С-Товары</h3>
+            <h3 class="my-6 lg:mx-0 md:mx-10 mx-5 font-semibold text-[25px]">Компании которые выбирают 1С-Товары</h3>
             <div
                 class="flex items-center justify-between md:overflow-visible overflow-x-scroll md:gap-0 gap-4 lg:mx-0 md:mx-10 mx-5">
                 <img src="../assets/svg/sullein_universty.svg" class="cursor-pointer lg:w-auto w-[80px]"
@@ -288,11 +301,13 @@
     </main>
     <main>
         <section class="max-w-[1400px] mx-auto">
-            <h2 class="text-[25px] font-semibold mt-[80px]">Мы поддерживаем своих клиентов</h2>
+            <h2
+                class="text-[25px] font-semibold mt-[80px] lg:mx-0 md:mx-10 mx-5 lg:text-start md:text-center text-start">
+                Мы поддерживаем своих клиентов</h2>
             <div
-                class="flex md:justify-between justify-center md:items-start items-center mt-10 md:flex-nowrap flex-wrap">
+                class="flex md:flex-row flex-col lg:justify-between justify-center lg:items-start items-center lg:gap-0 gap-6 mt-10 lg:mx-0 md:mx-10 mx-5 lg:flex-nowrap flex-wrap">
                 <div
-                    class="bg-white xl:px-8 xl:py-6 px-5 py-3 rounded-2xl flex items-start justify-between gap-5 cursor-pointer hover:shadow-box-shadow-hover shadow-box-shadow transition-shadow duration-200 w-fit xl:h-[160px] lg:h-[150px] md:h-[170px]">
+                    class="bg-white xl:px-8 xl:py-6 px-5 py-3 rounded-2xl flex items-start justify-between gap-5 cursor-pointer hover:shadow-box-shadow-hover shadow-box-shadow transition-shadow duration-200 md:w-fit sm:w-[600px] w-[300px]">
                     <div class="bg-green_bg-card rounded-xl w-fit h-fit p-2">
                         <img src="../assets/svg/refresh.svg" class="xl:w-auto lg:w-[20px] md:w-[18px]" alt="refresh">
                     </div>
@@ -301,14 +316,14 @@
                             конфигураций </h3>
                         <p
                             class="xl:max-w-[300px] lg:max-w-[230px] max-w-[200px] xl:text-[16px] lg:text-[13px] md:text-[12px] text-[10px]">
-                            Мы
-                            предоставляем обновление конфигураций
-                            для всех наших
-                            пользователей. </p>
+                            Вы
+                            получаете доступ к огромной базе
+                            знаний, с подробными и
+                            наглядными инструкциями о том, как работать с нашей программой </p>
                     </div>
                 </div>
                 <div
-                    class="bg-white xl:px-8 xl:py-6 px-5 py-3 rounded-2xl flex items-start justify-between gap-5 cursor-pointer hover:shadow-box-shadow-hover shadow-box-shadow transition-shadow duration-200 w-fit xl:h-[160px] lg:h-[150px] md:h-[170px]">
+                    class="bg-white xl:px-8 xl:py-6 px-5 py-3 rounded-2xl flex items-start justify-between gap-5 cursor-pointer hover:shadow-box-shadow-hover shadow-box-shadow transition-shadow duration-200 md:w-fit sm:w-[600px] w-[300px]">
                     <div class="bg-green_bg-card rounded-xl w-fit h-fit p-2">
                         <img src="../assets/svg/book.svg" class="xl:w-auto lg:w-[20px] md:w-[18px]" alt="refresh">
                     </div>
@@ -324,7 +339,7 @@
                     </div>
                 </div>
                 <div
-                    class="bg-white xl:px-8 xl:py-6 px-5 py-3 rounded-2xl flex items-start justify-between gap-5 cursor-pointer hover:shadow-box-shadow-hover shadow-box-shadow transition-shadow duration-200 w-fit xl:h-[160px] lg:h-[150px] md:h-[170px]">
+                    class="bg-white xl:px-8 xl:py-6 px-5 py-3 rounded-2xl flex items-start justify-between gap-5 cursor-pointer hover:shadow-box-shadow-hover shadow-box-shadow transition-shadow duration-200 md:w-fit sm:w-[600px] w-[300px]">
                     <div class="bg-green_bg-card rounded-xl w-fit h-fit p-2">
                         <img src="../assets/svg/refresh.svg" class="xl:w-auto lg:w-[20px] md:w-[18px]" alt="refresh">
                     </div>
@@ -333,10 +348,10 @@
                             консультации 24/7 </h3>
                         <p
                             class="xl:max-w-[300px] lg:max-w-[230px] max-w-[200px] xl:text-[16px] lg:text-[13px] md:text-[12px] text-[10px]">
-                            Мына
-                            связи с вами круглосуточно, а так
-                            же предоставить
-                            необходимую помощь в любой сложившейся ситуации </p>
+                            Вы
+                            получаете доступ к огромной базе
+                            знаний, с подробными и
+                            наглядными инструкциями о том, как работать с нашей программой </p>
                     </div>
                 </div>
             </div>
@@ -344,57 +359,67 @@
     </main>
     <main class="bg-gradient-to-r to-[#52E259] from-[#43A548]">
         <section class="mx-auto max-w-[1400px] my-20 py-10">
-            <h3 class="text-white text-[20px] font-medium mb-7">Попробуй бесплатные продукты уже сейчас</h3>
-            <div class="flex justify-between">
-                <div class="bg-white xl:p-10 p-6 rounded-2xl flex flex-col gap-3">
+            <h3 class="text-white text-[20px] font-medium mb-7 lg:mx-0 md:mx-10 mx-5 lg:text-start text-center">Попробуй
+                бесплатные продукты уже сейчас</h3>
+            <div class="flex justify-between items-center gap-2 lg:flex-row flex-col lg:m-0 md:mx-10 mx-5">
+                <div
+                    class="bg-white xl:p-10 p-6 rounded-2xl flex flex-col gap-3 lg:max-w-fit lg:w-full sm:w-fit w-full">
                     <div class="flex justify-between">
-                        <h5 class="font-semibold xl:text-[19px] text-[16px]">1С-Товары.Тестовый для магазина на 1 месяц</h5>
+                        <h5 class="font-semibold xl:text-[19px] md:text-[16px] text-[14px] sm:max-w-full max-w-[200px]">
+                            1С-Товары.Тестовый для магазина на 1 месяц</h5>
                         <img src="../assets/svg/forward-right.svg" class="cursor-pointer" alt="forward-right">
                     </div>
-                    <div class="flex gap-2 xl:text-[16px] text-[14px] text-[#6F7973]">
+                    <div class="flex gap-2 xl:text-[16px] md:text-[14px] text-[11px] text-[#6F7973]">
                         <input id="label9" type="radio">
                         <label for="label9">Прогноз спроса с использованием сервера прогнозирования</label>
                     </div>
-                    <div class="flex gap-2 xl:text-[16px] text-[14px] text-[#6F7973]">
+                    <div class="flex gap-2 xl:text-[16px] md:text-[14px] text-[11px] text-[#6F7973]">
                         <input id="label10" type="radio">
                         <label for="label10">Контроль товарных остатков и автоматический заказ товаров</label>
                     </div>
-                    <div class="flex gap-2 xl:text-[16px] text-[14px] text-[#6F7973]">
+                    <div class="flex gap-2 xl:text-[16px] md:text-[14px] text-[11px] text-[#6F7973]">
                         <input id="label11" type="radio">
                         <label for="label11">Анализ работы розничного магазина или сети магазинов</label>
                     </div>
-                    <div class="flex gap-2 xl:text-[16px] text-[14px] text-[#6F7973]">
+                    <div class="flex gap-2 xl:text-[16px] md:text-[14px] text-[11px] text-[#6F7973]">
                         <input id="label12" type="radio">
                         <label for="label12">Рекомендации по управлению ассортиментом (1С-Ритейл Чекер)</label>
                     </div>
                     <a href="#" class="mt-5 text-green_text text-[15px] font-medium w-fit">Бесплатно</a>
                 </div>
-                <div class="bg-white xl:p-10 p-6 rounded-2xl flex flex-col gap-3">
+                <div
+                    class="bg-white xl:p-10 p-6 rounded-2xl md:flex hidden flex-col gap-3 lg:max-w-fit lg:w-full sm:w-fit w-full">
                     <div class="flex justify-between">
-                        <h5 class="font-semibold xl:text-[19px] text-[16px]">1С-Ритейл Чекер Демо</h5>
+                        <h5 class="font-semibold xl:text-[19px] md:text-[16px] text-[14px] sm:max-w-full max-w-[200px]">
+                            1С-Ритейл Чекер Демо</h5>
                         <img src="../assets/svg/forward-right.svg" class="cursor-pointer" alt="forward-right">
                     </div>
-                    <div class="flex gap-2 xl:text-[16px] text-[14px] text-[#6F7973]">
+                    <div class="flex gap-2 xl:text-[16px] md:text-[14px] text-[11px] text-[#6F7973]">
                         <input id="label13" type="radio">
                         <label for="label13">Рекомендации по ТОП-3 товарам</label>
                     </div>
-                    <div class="flex gap-2 xl:text-[16px] text-[14px] text-[#6F7973]">
+                    <div class="flex gap-2 xl:text-[16px] md:text-[14px] text-[11px] text-[#6F7973]">
                         <input id="label14" type="radio">
                         <label for="label14">Контроль товарных остатков и автоматический заказ товаров</label>
                     </div>
-                    <div class="flex gap-2 xl:text-[16px] text-[14px] text-[#6F7973]">
+                    <div class="flex gap-2 xl:text-[16px] md:text-[14px] text-[11px] text-[#6F7973]">
                         <input id="label15" type="radio">
                         <label for="label15">Дашборд (индикаторы по управлению ассортиментом)</label>
                     </div>
-                    <div class="flex gap-2 xl:text-[16px] text-[14px] text-[#6F7973]">
+                    <div class="flex gap-2 xl:text-[16px] md:text-[14px] text-[11px] text-[#6F7973]">
                         <input id="label16" type="radio">
                         <label for="label16">Рекомендации по управлению ассортиментом (1С-Ритейл Чекер)</label>
                     </div>
                     <a href="#" class="mt-5 text-green_text text-[15px] font-medium w-fit">Бесплатно</a>
                 </div>
+                <div class="md:hidden flex gap-4 mt-5">
+                    <img src="../assets/svg/next-left.svg" class="cursor-pointer" alt="next-left">
+                    <img src="../assets/svg/next-right.svg" class="cursor-pointer" alt="next-right">
+                </div>
             </div>
         </section>
     </main>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
