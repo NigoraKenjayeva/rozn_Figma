@@ -1524,6 +1524,10 @@ video {
   font-size: 1px;
 }
 
+.text-\[19px\] {
+  font-size: 19px;
+}
+
 .font-medium {
   font-weight: 500;
 }
