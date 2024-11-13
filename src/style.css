@@ -11,15 +11,6 @@
   background: linear-gradient(#52e259, #43a548);
   border-radius: 20px;
 }
-img{
-  cursor: pointer;
-}
-a{
-  cursor: pointer;
-}
-button{
-  cursor: pointer;
-}
 .card_first {
   animation: card 1s infinite alternate;
 }
