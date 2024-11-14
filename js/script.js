@@ -9,15 +9,16 @@ menuToggle.addEventListener("click", () => {
   mobileMenu.classList.add("active-position");
 });
 
-// RegEx bu kerakli narsa tegmang
+// RegEx 
 
 const form = document.getElementById("form");
 const userName = document.getElementById("name");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 let inputT = document.querySelectorAll(".inp");
+let submitBtn = document.querySelector(".submit_btn");
 
-form.addEventListener("submit", (e) => {
+submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   const emailRegEx = /[a-z0-9]{6,12}@gmail/;
   const phoneRegEx = /^[0-9]{8,12}$/;
@@ -45,18 +46,19 @@ form.addEventListener("submit", (e) => {
 
 // Navbar scroll
 
-const scrollHeader = () =>{
-  const header = document.querySelector('.header')
+const scrollHeader = () => {
+  const header = document.querySelector(".header");
   // Add a class if the bottom offset is greater than 50 of the viewport
-  this.scrollY >= 50 ? header.classList.add('bg-header') 
-                     : header.classList.remove('bg-header')
-}
-window.addEventListener('scroll', scrollHeader)
+  this.scrollY >= 50
+    ? header.classList.add("bg-header")
+    : header.classList.remove("bg-header");
+};
+window.addEventListener("scroll", scrollHeader);
 
-//  Loading Screen 
+//  Loading Screen
 
-var loader = document.getElementById("preloader")
+var loader = document.getElementById("preloader");
 
-window.addEventListener("load", ()=>{
-  loader.style.display = "none"
-})
+window.addEventListener("load", () => {
+  loader.style.display = "none";
+});
