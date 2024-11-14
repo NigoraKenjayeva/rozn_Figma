@@ -1,5 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  font-family: "inter", sans-serif;
+}
+header {
+  z-index: 1000;
+}
 .active-position {
   top: 0;
+}
+.bg-header {
+  background-image: linear-gradient(to right, #52e259, #16bb1f, #52e259);
+  color: white;
 }
 ::-webkit-scrollbar {
   width: 12px;
@@ -11,7 +22,19 @@
   background: linear-gradient(#52e259, #43a548);
   border-radius: 20px;
 }
+.scrol::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scrol::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.467);
+}
+.scrol::-webkit-scrollbar-track {
+  background: rgba(128, 128, 128, 0.281);
+}
 .card_first {
+  position: sticky;
+  z-index: 0;
   animation: card 1s infinite alternate;
 }
 @keyframes card {
@@ -23,6 +46,17 @@
   }
 }
 .swiper {
-  width: 460px;
+  width: 500px;
   height: 300px;
+}
+#preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black url('../assets/video/loading2.gif') center center no-repeat;
+  background-size: 20%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
 }

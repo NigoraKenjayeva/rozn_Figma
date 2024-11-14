@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +7,18 @@
     <link rel="icon" type="image/x-icon" href="/assets/svg/image 1.svg">
     <link rel="stylesheet" href="../src/output.css">
     <link rel="stylesheet" href="../src/style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-        * {
-            font-family: 'inter', sans-serif;
-        }
-    </style>
 </head>
-
 <body class="bg-body_bg">
+    <div id="preloader">
+        <iframe class="hidden" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="hidden" width="560"
+            height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     <header class="bg-[#FFFFFF] sticky z-50 top-0 w-full">
         <div class="container max-w-[1400px] mx-auto flex items-center justify-between px-5 md:py-5 py-3">
             <div>
@@ -34,7 +35,7 @@
                 <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]"
                     href="#">Инструкции</a>
                 <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]"
-                    href="#">Продукты</a>
+                    href="/public/product.html">Продукты</a>
                 <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]" href="#">База
                     знаний </a>
                 <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]" href="#">О
@@ -58,7 +59,8 @@
             class="fixed top-[-500px] left-0 flex justify-center items-center w-full h-[500px] bg-white shadow-md duration-300">
             <div class="flex flex-col items-center py-5">
                 <div class="close cursor-pointer absolute top-5 right-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="30"
+                        height="30">
                         <path
                             d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
                         </path>
@@ -482,8 +484,14 @@
             </div>
         </section>
     </main>
+    <script>
+        var loader = document.getElementById("preloader")
+
+        window.addEventListener("load", () => {
+            loader.style.display = "none"
+        })
+    </script>
     <script src="../js/accardion.js"></script>
     <script src="../js/script.js"></script>
 </body>
-
 </html>
