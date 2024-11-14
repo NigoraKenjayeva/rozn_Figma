@@ -1,5 +1,5 @@
 header {
-    z-index: 1000;
+  z-index: 1000;
 }
 .active-position {
   top: 0;
@@ -13,6 +13,15 @@ header {
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(#52e259, #43a548);
   border-radius: 20px;
+}
+img {
+  cursor: pointer;
+}
+a {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
 }
 .card_first {
   position: sticky;
