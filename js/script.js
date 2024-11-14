@@ -52,3 +52,11 @@ const scrollHeader = () =>{
                      : header.classList.remove('bg-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+//  Loading Screen 
+
+var loader = document.getElementById("preloader")
+
+window.addEventListener("load", ()=>{
+  loader.style.display = "none"
+})

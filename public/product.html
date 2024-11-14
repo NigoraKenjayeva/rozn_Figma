@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,18 @@
     <!-- style -->
     <link rel="stylesheet" href="../src/style.css">
 </head>
+
 <body class="bg-body_bg">
+    <div id="preloader">
+        <iframe class="hidden" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="hidden" width="560"
+            height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     <header class="header bg-[#FFFFFF] sticky top-0 w-full">
         <div class="container max-w-[1400px] mx-auto flex items-center justify-between px-5 md:py-5 py-3">
             <div>
@@ -633,7 +645,8 @@
                     </div>
                     <div
                         class="bg-gradient-to-b to-[#52E259] from-[#43A548] flex md:flex-row flex-col justify-center items-center text-white font-semibold md:gap-10 gap-4 py-3 max-w-[1400px] rounded-3xl">
-                        <h3 class="text-center md:text-[15px] text-[10px] md:font-semibold font-light md:p-0 px-5">Переходи в раздел “Как это работает” , что бы получить больше полезной информации</h3>
+                        <h3 class="text-center md:text-[15px] text-[10px] md:font-semibold font-light md:p-0 px-5">
+                            Переходи в раздел “Как это работает” , что бы получить больше полезной информации</h3>
                         <div
                             class="bg-white text-black md:text-[14px] text-[10px] transition-all hover:text-white hover:bg-gradient-to-r to-[#52E259] from-[#43A548] md:font-semibold font-normal cursor-pointer rounded-3xl px-8 py-1">
                             Как это работает
@@ -644,24 +657,30 @@
         </section>
     </main>
     <main>
-        <section class="bg-gradient-to-r to-[#52E259] from-[#43A548] flex md:flex-row flex-col md:items-start items-center justify-between max-w-[1400px] sm:mx-auto rounded-3xl md:p-10 p-5 mx-5 my-20">
+        <section
+            class="bg-gradient-to-r to-[#52E259] from-[#43A548] flex md:flex-row flex-col md:items-start items-center justify-between max-w-[1400px] sm:mx-auto rounded-3xl md:p-10 p-5 mx-5 my-20">
             <div class="max-w-[500px]">
-                <h2 class="text-white md:text-[28px] sm:text-[20px] text-[18px] font-semibold">Хотите бесплатную консультацию?
+                <h2 class="text-white md:text-[28px] sm:text-[20px] text-[18px] font-semibold">Хотите бесплатную
+                    консультацию?
                     Оставляйте заявку</h2>
-                <p class="md:text-[18px] sm:text-[16px] text-[14px] text-white font-extralight mt-3">Оставляйте заявку и наши менеджеры свяжутся с Вами в ближайшее время </p>
+                <p class="md:text-[18px] sm:text-[16px] text-[14px] text-white font-extralight mt-3">Оставляйте заявку и
+                    наши менеджеры свяжутся с Вами в ближайшее время </p>
             </div>
             <div class="md:max-w-[650px] w-full">
                 <form id="form" class="flex flex-col gap-2">
                     <label for="name" class="text-white font-light text-[14px] px-1">Ваше имя</label>
                     <input type="text" id="name" class="inp px-4 outline-none py-2 rounded-3xl" placeholder="Ваше имя">
                     <label for="phone" class="text-white font-light text-[14px] px-1">Ваш телефон</label>
-                    <input type="number" id="phone" class="inp px-4 outline-none py-2 rounded-3xl" placeholder="Ваш телефон">
+                    <input type="number" id="phone" class="inp px-4 outline-none py-2 rounded-3xl"
+                        placeholder="Ваш телефон">
                     <label for="email" class="text-white font-light text-[14px] px-1">Ваш e-mail</label>
                     <input type="email" id="email" class="inp px-4 outline-none py-2 rounded-3xl" placeholder="Ваш ">
                     <div class="flex items-center md:flex-row flex-col-reverse gap-5 mt-5">
-                        <p class="text-[13px] text-white">Нажимая кнопку вы даете согласие на обработку персональных данных в соответствии с политикой
+                        <p class="text-[13px] text-white">Нажимая кнопку вы даете согласие на обработку персональных
+                            данных в соответствии с политикой
                             конфиденциальности</p>
-                        <button type="submit" class="md:max-w-fit w-full h-fit py-2 px-10 rounded-3xl transition-all duration-[250ms] bg-[#2C2B35] hover:bg-[#2c2b35e8] text-white text-[14px] font-semibold">Отправить</button>
+                        <button type="submit"
+                            class="md:max-w-fit w-full h-fit py-2 px-10 rounded-3xl transition-all duration-[250ms] bg-[#2C2B35] hover:bg-[#2c2b35e8] text-white text-[14px] font-semibold">Отправить</button>
                     </div>
                 </form>
             </div>
@@ -695,4 +714,5 @@
     <script src="../js/script.js"></script>
     <script src="../js/accardion.js"></script>
 </body>
+
 </html>
