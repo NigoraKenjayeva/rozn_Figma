@@ -14,6 +14,7 @@ header {
   background: linear-gradient(#52e259, #43a548);
   border-radius: 20px;
 }
+<<<<<<< HEAD
 img {
   cursor: pointer;
 }
@@ -23,6 +24,8 @@ a {
 button {
   cursor: pointer;
 }
+=======
+>>>>>>> b0dc5a9c7d11316551149f9af5b278b052ec579b
 .card_first {
   position: sticky;
   z-index: 0;
