@@ -22,11 +22,6 @@ header {
   background: linear-gradient(#52e259, #43a548);
   border-radius: 20px;
 }
-.card_first {
-  position: sticky;
-  z-index: 0;
-  animation: card 1s infinite alternate;
-}
 .scrol::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -36,6 +31,11 @@ header {
 }
 .scrol::-webkit-scrollbar-track {
   background: rgba(128, 128, 128, 0.281);
+}
+.card_first {
+  position: sticky;
+  z-index: 0;
+  animation: card 1s infinite alternate;
 }
 @keyframes card {
   0% {
