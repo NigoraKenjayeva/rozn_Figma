@@ -1712,6 +1712,11 @@ video {
     margin-bottom: 4rem;
   }
 
+  .md\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .md\:mb-10 {
     margin-bottom: 2.5rem;
   }
