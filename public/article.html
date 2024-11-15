@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="../src/output.css">
     <link rel="stylesheet" href="../src/style.css">
 </head>
-
 <body class="bg-body_bg">
     <div id="preloader">
         <iframe class="hidden" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
@@ -54,9 +52,9 @@
                     знаний </a>
                 <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]" href="#">О
                     нас</a>
-                <a href="/index.html">
+                <a href="#">
                     <button
-                        class="lg:w-[150px] lg:h-[40px] w-[100px] h-[35px] lg:text-[18px] text-[15px] text-white font-semibold shadow-lg hover:shadow-2xl rounded-full bg-gradient-to-r from-green-600  to-green-400 hover:from-green-700 hover:to-green-500 transition-all duration-300">
+                        class="button lg:w-[150px] lg:h-[40px] w-[100px] h-[35px] lg:text-[18px] text-[15px] text-white font-semibold shadow-lg hover:shadow-2xl rounded-full bg-gradient-to-r from-green-600  to-green-400 hover:from-green-700 hover:to-green-500 transition-all duration-300">
                         Вход
                     </button>
                 </a>
@@ -498,6 +496,38 @@
             </div>
         </section>
     </main>
+    <main class="modal w-full h-full hidden justify-center items-center bg-[#0000007f] fixed z-[10000] top-0">
+        <section class="rounded-2xl bg-white p-10 relative">
+            <div class="absolute right-4 top-4 cursor-pointer closeBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="30">
+                    <path
+                        d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+                    </path>
+                </svg>
+            </div>
+            <h3 class="text-center text-[22px] font-semibold uppercase">Оставьте заявку демонстрацию</h3>
+            <p class="text-center font-normal text-[12px] mt-4">Наши менеджеры свяжутся с Вами для консультации </p>
+            <form id="form2" class="form flex flex-col justify-center gap-2">
+                <label for="contact_name">Ваше имя</label>
+                <input id="contact_name name2" type="text" class="inp2 outline-none px-3 py-2 bg-[#F3F4F6] rounded-2xl"
+                    placeholder="Введите Ваше имя" required>
+                <label for="contact_phone">Ваш телефон</label>
+                <input id="contact_phone" type="number" class="inp2 outline-none px-3 py-2 bg-[#F3F4F6] rounded-2xl"
+                    placeholder="Введите Ваш телефон" required>
+                <div class="flex items-center gap-5">
+                    <p class="text-end max-w-[385px] text-[12px]">Нажимая кнопку вы даете согласие на обработку
+                        персональных данных в соответствии с политикой конфиденциальности</p>
+                    <button type="submit"
+                        class="btn_submit text-white w-fit h-fit px-8 py-2 rounded-3xl bg-gradient-to-r from-[#52E259] to-[#43A548] hover:from-[#3ee947] hover:to-[#40c247] transition-all duration-300">
+                        Отправить
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- script -->
+
     <script>
         var loader = document.getElementById("preloader")
 
@@ -508,5 +538,4 @@
     <script src="../js/accardion.js"></script>
     <script src="../js/script.js"></script>
 </body>
-
 </html>

@@ -27,3 +27,16 @@ var loader = document.getElementById("preloader");
 window.addEventListener("load", () => {
   loader.style.display = "none";
 });
+
+// active_modal
+
+const modal = document.querySelector(".modal");
+const button = document.querySelector(".button");
+const closeBtn = document.querySelector(".closeBtn"); 
+
+button.addEventListener("click", () =>{
+  modal.classList.add("active_modal")
+})
+closeBtn.addEventListener("click", () =>{
+  modal.classList.remove("active_modal")
+})
