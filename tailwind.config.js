@@ -9,6 +9,7 @@ module.exports = {
         "body_bg": "#F7F8F8",
         "grey_gb": "#EBF5EB",
         "green_bg-card": "#D1F7D3",
+        "bg-card": "#F4FAF4",
       },
       textColor: {
         green_text: "#43A548",
@@ -20,6 +21,7 @@ module.exports = {
           "linear-gradient(100.98deg, #43A548 -4.14%, #52E259 108.69%);",
       },
       boxShadow: {
+        "shadow_card": "0 0 10px 3px rgba(0,0,0,0.1)",
         "box-shadow":"0px 0px 10px 3px rgba(0,0,0,0.1)",
         "box-shadow-hover":"0px 0px 10px 3px rgba(0,0,0,0.2)",
       },
