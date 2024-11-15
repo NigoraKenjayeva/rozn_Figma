@@ -15,7 +15,7 @@
 </head>
 
 <body class="bg-body_bg">
-    <div id="preloader">
+    <!-- <div id="preloader">
         <iframe class="hidden" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -36,7 +36,7 @@
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+    </div> -->
     <header class="header bg-white sticky z-50 top-0 w-full">
         <div class="container max-w-[1400px] mx-auto flex items-center justify-between px-5 md:py-5 py-3">
             <div>
@@ -106,27 +106,37 @@
         </section>
     </main>
     <main>
-        <section>
-            <div class="">
-                <h2>1С-Товары <span>от 95 000 ₽/мес</span></h2>
-                <div class="flex items-center cursor-pointer">
-                    <input id="radio1" type="radio">
-                    <label for="radio1">Прогноз спроса с использованием сервера прогнозирования</label>
+        <section class="mx-auto max-w-[1400px] 2xl:px-0 lg:px-5 md:px-10 px-5">
+            <div class="md:px-10 flex items-center justify-between bg-white">
+                <div class="">
+                    <h2>1С-Товары <span class="text-[#43A548] font-semibold">от 95 000 ₽/мес</span></h2>
+                    <div class="flex items-center gap-1">
+                        <input id="radio1" type="radio">
+                        <label for="radio1">Прогноз спроса с использованием сервера прогнозирования</label>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <input id="radio2" type="radio">
+                        <label for="radio2">Контроль товарных остатков и автоматический заказ товаров</label>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <input id="radio3" type="radio">
+                        <label for="radio3">Анализ работы розничного магазина или сети магазинов</label>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <input id="radio4" type="radio">
+                        <label for="radio4">Рекомендации по управлению ассортиментом (1С-Ритейл Чекер)</label>
+                    </div>
+                    <p>После подключения каждую неделю вам на почту будет приходить письмо с рекомендациями:</p>
+                    <p>• какие товары необходимо срочно купить, чтобы избежать упущенной прибыли из-за пустых полок;</p>
+                    <p>• Система контроля упущенных продаж, средний чек, минимальный чек, максимальный чек</p>
+                    <p>• Управлять номенклатурой, принимать решения что вывести из ассортимента, а какие позиции
+                        увеличить в объемах</p>
+                    <p>• Получите все приемущества 1С-Чекер</p>
                 </div>
-                <div class="flex items-center cursor-pointer">
-                    <input id="radio2" type="radio">
-                    <label for="radio2">Контроль товарных остатков и автоматический заказ товаров</label>
-                </div>
-                <div class="flex items-center cursor-pointer">
-                    <input id="radio3" type="radio">
-                    <label for="radio3">Анализ работы розничного магазина или сети магазинов</label>
-                </div> 
-                <div class="flex items-center cursor-pointer">
-                    <input id="radio4" type="radio">
-                    <label for="radio4">Рекомендации по управлению ассортиментом (1С-Ритейл Чекер)</label>
+                <div class="max-w-[400px]">
+                    <img src="/assets/image/product_cart.png" alt="">
                 </div>
             </div>
-            <div class=""></div>
         </section>
     </main>
     <main class="bg-grey-section">
