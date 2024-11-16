@@ -96,8 +96,40 @@
                 Верунться на главную</div>
         </section>
     </main>
+    <main class="modal w-full h-full hidden justify-center items-center bg-[#0000007f] fixed z-[10000] top-0">
+        <section class="rounded-2xl bg-white p-10 relative">
+            <div class="absolute right-4 top-4 cursor-pointer closeBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="30">
+                    <path
+                        d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+                    </path>
+                </svg>
+            </div>
+            <h3 class="text-center text-[22px] font-semibold uppercase">Оставьте заявку демонстрацию</h3>
+            <p class="text-center font-normal text-[12px] mt-4">Наши менеджеры свяжутся с Вами для консультации </p>
+            <form id="form2" class="form flex flex-col justify-center gap-2">
+                <label for="contact_name">Ваше имя</label>
+                <input id="contact_name name2" type="text" class="inp2 outline-none px-3 py-2 bg-[#F3F4F6] rounded-2xl"
+                    placeholder="Введите Ваше имя" required>
+                <label for="contact_phone">Ваш телефон</label>
+                <input id="contact_phone" type="number" class="inp2 outline-none px-3 py-2 bg-[#F3F4F6] rounded-2xl"
+                    placeholder="Введите Ваш телефон" required>
+                <div class="flex items-center gap-5">
+                    <p class="text-end max-w-[385px] text-[12px]">Нажимая кнопку вы даете согласие на обработку
+                        персональных данных в соответствии с политикой конфиденциальности</p>
+                    <button
+                        class="btn_submit text-white w-fit h-fit px-8 py-2 rounded-3xl bg-gradient-to-r from-[#52E259] to-[#43A548] hover:from-[#3ee947] hover:to-[#40c247] transition-all duration-300">
+                        <a class="w-full h-full" href="not_found.html">
+                            Отправить
+                        </a>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
     <footer class=" bg-footer-bg pt-8">
-        <div class="mx-auto max-w-[1400px] lg:gap-0 gap-10 2xl:px-0 xl:px-5 md:px-10 px-5 text-white flex flex-wrap md:flex-row flex-col lg:justify-between justify-start">
+        <div
+            class="mx-auto max-w-[1400px] lg:gap-0 gap-10 2xl:px-0 xl:px-5 md:px-10 px-5 text-white flex flex-wrap md:flex-row flex-col lg:justify-between justify-start">
             <div class="flex flex-col gap-4">
                 <div class="flex items-center gap-3 font-semibold text-[20px] text-white">
                     <img src="/assets/svg/logo.svg" class="w-[30px]" alt="logo">
@@ -123,7 +155,8 @@
             <div>
                 <p class="text-[18px] font-semibold">Информация</p>
                 <div class="text-[13px] flex flex-col gap-3 mt-4">
-                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">Как это работает</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">Как это работает
+                    </p>
                     <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">Инструкции</p>
                     <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">Блог</p>
                     <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">О нас</p>
@@ -132,15 +165,20 @@
             <div>
                 <p class="text-[18px] font-semibold">Продукты</p>
                 <div class="flex flex-col gap-3 text-[13px] mt-4">
-                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Ритейл Чекер Демо</p>
-                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Товары.Тестовый для магазина на 1 месяц</p>
-                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Ритейл Чекер</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Ритейл Чекер
+                        Демо</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">
+                        1С-Товары.Тестовый для магазина на 1 месяц</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Ритейл Чекер
+                    </p>
                     <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Товары 300</p>
-                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Товары 30000</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Товары 30000
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="border-t border-[#494949] mt-5 flex items-center justify-between max-w-[1400px] xl:mx-auto 2xl:px-0 xl:px-5 md:mx-10 mx-5 py-3 text-[#919999]">
+        <div
+            class="border-t border-[#494949] mt-5 flex items-center justify-between max-w-[1400px] xl:mx-auto 2xl:px-0 xl:px-5 md:mx-10 mx-5 py-3 text-[#919999]">
             <p>1С-Товары © 2023</p>
             <p>Сайт создан - wtstudio.ru</p>
         </div>
