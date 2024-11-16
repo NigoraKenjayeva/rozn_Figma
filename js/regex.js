@@ -11,7 +11,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const emailRegEx = /[a-z0-9]{6,12}@gmail/;
   const phoneRegEx = /^[0-9]{8,12}$/;
-  const nameRegEx = /[a-zA-Z]/;
+  const nameRegEx = /^[a-zA-Z]{5,20}$/;
   let emailValue = email.value;
   let phoneValue = phone.value;
   let nameValue = userName.value;
