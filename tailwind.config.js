@@ -10,6 +10,7 @@ module.exports = {
         "grey_gb": "#EBF5EB",
         "green_bg-card": "#D1F7D3",
         "bg-card": "#F4FAF4",
+        "footer-bg": "#2C2B35",
       },
       textColor: {
         green_text: "#43A548",
