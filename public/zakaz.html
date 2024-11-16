@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/svg/image 1.svg">
+    <title>Rozn</title>
+    <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-[#F7F8F8]">
+    <div id="preloader">
+        <iframe class="hidden" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="hidden" width="560"
+            height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="hidden" width="560"
+            height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="hidden" width="560"
+            height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="hidden" width="560"
+            height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <header class="header bg-[#FFFFFF] sticky top-0 w-full">
+        <div class="container max-w-[1400px] mx-auto flex items-center justify-between px-5 md:py-5 py-3">
+            <div>
+                <a href="/index.html">
+                    <div class="flex items-center gap-2">
+                        <img src="/assets/svg/image 1.svg" class="lg:h-[30px] h-[20px]" alt="dowland">
+                        <span class="font-semibold lg:text-[19px] text-[15px]">1С-Товары</span>
+                    </div>
+                </a>
+            </div>
+            <div class="md:flex gap-7 items-center hidden">
+                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]" href="">Как
+                    это работает</a>
+                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]"
+                    href="#">Инструкции</a>
+                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]"
+                    href="/public/product.html">Продукты</a>
+                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]" href="#">База
+                    знаний </a>
+                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]" href="#">О
+                    нас</a>
+                <a href="/index.html">
+                    <button
+                        class="lg:w-[150px] lg:h-[40px] w-[100px] h-[35px] lg:text-[18px] text-[15px] text-white font-semibold shadow-2xl rounded-full bg-gradient-to-r from-green-600  to-green-400 hover:from-green-700 hover:to-green-500 transition-all duration-300">
+                        Вход
+                    </button>
+                </a>
+            </div>
+            <button id="menu-toggle"
+                class="md:hidden flex p-2 text-gray-600 hover:text-green-500 transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu"
+            class="fixed  top-[-500px] left-0 flex justify-center items-center w-full h-[500px] bg-white shadow-md duration-300">
+            <div class="flex flex-col items-center py-5">
+                <div class="close cursor-pointer absolute top-5 right-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="30"
+                        height="30">
+                        <path
+                            d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+                        </path>
+                    </svg>
+                </div>
+                <a class="py-2 text-[15px] text-gray-700 hover:text-[#43A548]" href="#">Как это работает</a>
+                <a class="py-2 text-[15px] text-gray-700 hover:text-[#43A548]" href="#">Инструкции</a>
+                <a class="py-2 text-[15px] text-gray-700 hover:text-[#43A548]" href="/public/product.html">Продукты</a>
+                <a class="py-2 text-[15px] text-gray-700 hover:text-[#43A548]" href="#">База знаний</a>
+                <a class="py-2 text-[15px] text-gray-700 hover:text-[#43A548]" href="#">О нас</a>
+                <a href="#">
+                    <button
+                        class="w-[150px] h-[40px] mt-3 text-white font-semibold shadow-lg hover:shadow-2xl rounded-full bg-gradient-to-r from-green-600  to-green-400 hover:from-green-700 hover:to-green-500 transition-all duration-300">
+                        Вход
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="flex justify-between md:flex-row flex-col max-w-[1400px] mx-auto mt-10">
+        <section class="2xl:m-0 lg:ml-5 md:ml-4 mx-4 md:my-0 my-2">
+            <div class="w-full mx-auto">
+                <div class="accordion  shadow-md rounded-md">
+                    <div class="border-b xl:w-[400px] lg:w-[300px] w-full">
+                        <button
+                            class="accordion-button rounded-t-md flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-white bg-gradient-to-r from-[#52E259] to-[#43A548] hover:bg-green-700 focus:outline-none">
+                            <span class="lg:text-[18px] text-[13px]">
+                                С чего начать
+                            </span>
+                            <img src="../assets/svg/forward-top.svg" alt="#">
+                        </button>
+                        <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                            <h2 class="pb-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* (старые
+                                конфигурации)</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Фреш.
+                                Подключение 1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                        </div>
+                    </div>
+                    <div class="border-b xl:w-[400px] lg:w-[300px] w-full">
+                        <button
+                            class="accordion-button flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-white bg-gradient-to-r from-[#52E259] to-[#43A548] hover:bg-green-700 focus:outline-none">
+                            <span class="lg:text-[18px] text-[13px]">
+                                Заявки
+                            </span>
+                            <img src="../assets/svg/forward-top.svg" alt="#">
+                        </button>
+                        <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                            <h2 class="pb-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* (старые
+                                конфигурации)</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Фреш.
+                                Подключение 1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                        </div>
+                    </div>
+                    <div class="border-b xl:w-[400px] lg:w-[300px] w-full">
+                        <button
+                            class="accordion-button flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-white bg-gradient-to-r from-[#52E259] to-[#43A548] hover:bg-green-700 focus:outline-none">
+                            <span class="lg:text-[18px] text-[13px]">
+                                Автоматизация магазина
+                            </span>
+                            <img src="../assets/svg/forward-top.svg" alt="#">
+                        </button>
+                        <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                            <h2 class="pb-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* (старые
+                                конфигурации)</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Фреш.
+                                Подключение 1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                        </div>
+                    </div>
+                    <div class="border-b xl:w-[400px] lg:w-[300px] w-full">
+                        <button
+                            class="accordion-button flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-white bg-gradient-to-r from-[#52E259] to-[#43A548] hover:bg-green-700 focus:outline-none">
+                            <span class="lg:text-[18px] text-[13px]">
+                                Управление ассортиментом
+                            </span>
+                            <img src="../assets/svg/forward-top.svg" alt="#">
+                        </button>
+                        <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                            <h2 class="pb-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* (старые
+                                конфигурации)</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Фреш.
+                                Подключение 1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                        </div>
+                    </div>
+                    <div class="border-b xl:w-[400px] lg:w-[300px] w-full">
+                        <button
+                            class="accordion-button flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-white bg-gradient-to-r from-[#52E259] to-[#43A548] hover:bg-green-700 focus:outline-none">
+                            <span class="lg:text-[18px] text-[13px]">
+                                Прогноз продаж
+                            </span>
+                            <img src="../assets/svg/forward-top.svg" alt="#">
+                        </button>
+                        <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                            <h2 class="pb-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* (старые
+                                конфигурации)</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Фреш.
+                                Подключение 1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                        </div>
+                    </div>
+                    <div class="border-b xl:w-[400px] lg:w-[300px] w-full">
+                        <button
+                            class="accordion-button flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-white bg-gradient-to-r from-[#52E259] to-[#43A548] hover:bg-green-700 focus:outline-none">
+                            <span class="lg:text-[18px] text-[13px]">
+                                Аналитика магазина
+                            </span>
+                            <img src="../assets/svg/forward-top.svg" alt="#">
+                        </button>
+                        <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                            <h2 class="pb-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* (старые
+                                конфигурации)</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Фреш.
+                                Подключение 1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                        </div>
+                    </div>
+                    <div class="border-b xl:w-[400px] lg:w-[300px] w-full">
+                        <button
+                            class="accordion-button rounded-b-md flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-white bg-gradient-to-r from-[#52E259] to-[#43A548] hover:bg-green-700 focus:outline-none">
+                            <span class="lg:text-[18px] text-[13px]">
+                                EDI: обмен документами
+                            </span>
+                            <img src="../assets/svg/forward-top.svg" alt="#">
+                        </button>
+                        <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                            <h2 class="pb-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* (старые
+                                конфигурации)</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Фреш.
+                                Подключение 1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-green_bg-card w-full flex-col items-center md:flex gap-2 hidden rounded-3xl p-8 mt-10">
+                <p class="text-[12px] font-normal">Хотите попробовать?</p>
+                <p>Полная версия сервиса</p>
+                <h2 class="lg:text-[35px] md:text-[28px] font-semibold max-w-[200px] text-center">1 месяц бесплатно</h2>
+                <div class="bg-[#43A548] rounded-3xl w-fit h-fit px-14 py-2 text-white cursor-pointer">Получить</div>
+            </div>
+        </section>
+        <section class="bg-white xl:p-6 lg:p-4 md:p-3 p-4 rounded-2xl 2xl:m-0 lg:mx-5 md:mx-4 mx-5">
+            <img src="/assets/svg/image 2 (1).svg" class="xl:max-w-[850px] lg:max-w-[680px] md:max-w-[480px] max-w-full "
+                alt="shop">
+            <h3
+                class="lg:text-[25px] md:text-[20px] text-[15px] xl:max-w-[850px] lg:max-w-[680px] md:max-w-[480px] max-w-full font-semibold my-4">
+                Ассортимент продуктового магазина: методы и
+                основные принципы его формирования</h3>
+            <p
+                class="lg:text-[15px] md:text-[13px] sm:text-[12px] text-[10px] xl:max-w-[850px] lg:max-w-[680px] md:max-w-[480px] max-w-full">
+                Правильно подобранный ассортимент продуктового магазина вне зависимости от его
+                масштабов и
+                месторасположения точно станет одним из гарантов успеха и качественных продаж. Именно по этой причине
+                любому предпринимателю, который планирует открыть продуктовый магазин или заняться бизнесом в этом
+                направлении, стоит максимально ответственно подойти к решению вопроса с формированием ассортимента
+                товаров в магазине. Естественно, что он напрямую зависит от большого количества факторов. К примеру,
+                матрица у супермаркета будет значительно шире, чем привычного для многих магазина около дома, а
+                минимаркет станет чем-то средним между ними.
+                В нашем сегодняшнем обзоре будем рассматривать вопросы, связанные с ведением такого бизнеса. Дадим
+                рекомендации по составлению ассортиментной матрицы для разных типов точек по продаже продовольственных и
+                смежных товаров, рассмотрим их базовые группы, поговорим о наименованиях, необходимых к включению в
+                товарную матрицу. Вкратце обсудим правила оптимального мерчандайзинга, которые помогут увеличить
+                продажи. Управление ассортиментом маназина мы предлагаем автоматизировать на базе сервиса 1С-Товары.</p>
+            <h3
+                class="lg:text-[25px] md:text-[20px] text-[15px] font-semibold lg:max-w-[680px] md:max-w-[480px] max-w-full my-4">
+                Ассортиментная матрица продуктовых магазинов
+                Магазин “У дома”</h3>
+            <p
+                class="lg:text-[15px] md:text-[13px] sm:text-[12px] text-[10px] xl:max-w-[850px] lg:max-w-[680px] md:max-w-[480px] max-w-full">
+                Средний чек небольшой торговой точки такого типа в крупном городе обычно не
+                превышает 150-300 ₽. Товарную
+                матрицу здесь нужно продумать особенно тщательно, чтобы привлечь большее количество посетителей, которые
+                постепенно перейдут в категорию постоянных благодаря шаговой доступности и наличия всех необходимых для
+                повседневной жизни товаров. Перед формированием матрицы стоит предварительно выбрать одну из групп ЦА,
+                представители которой проживают в районе и чаще всего могут потенциально посещать вашу торговую точку:
+                для употребления сразу после покупки. Обычно это молодые семьи и одиночки, выбирающие готовую еду,
+                закуски и прохладительные напитки;
+                люди, закупающиеся на определенный период в крупных гипермаркетах. Около дома обычно такими людьми
+                покупаются продукты, относящиеся к категории скоропортящихся. Это мясные и молочные продукты,
+                хлебобулочные изделия, овощи и фрукты;
+                люди, которые всё покупают около дома. Обычно это люди пенсионного возраста или люди, сильно занятые на
+                работе и в делах по дому. Аналогично к этой группе ЦА относятся люди, не имеющие собственного
+                автомобиля.
+            </p>
+            <img src="/assets/svg/image 3 (1).svg"
+                class="xl:max-w-[850px] lg:max-w-[680px] md:max-w-[480px] max-w-full my-3" alt="img">
+            <p
+                class="lg:text-[15px] md:text-[13px] sm:text-[12px] text-[10px] xl:max-w-[850px] lg:max-w-[680px] md:max-w-[480px] max-w-full">
+                Важно оценить место открытия или уже существующего местоположения торговой точки.
+                Если она открыта в
+                новом спальном районе, где стоимость жилья выше, чем во вторичном сегменте недвижимости, то
+                покупательская способность жителей близлежащих домов будет повышенной. Соответственно, товарную матрицу
+                здесь можно заполнять известными в плане бренда производителями продуктами высокого качества. Если
+                торговая точка располагается в давно существующем районе, где живут люди пенсионного возраста, то можно
+                заполнить полки ноунейм брендами пониженного в сравнении с предыдущим вариантом качества с заведомо
+                более низкой ценой.
+                Необходимо запомнить, что сформированный вами ассортимент не является финальным, поскольку на него могут
+                воздействовать различные факторы: активная реклама бренда по ТВ или иным каналам связи с потребителем,
+                появление новых и развитие старых брендов, иные причины. Важно следить за новыми трендами и оставаться
+                «в теме». Ассортимент товаров в магазине такого типа в любом случае не нужно делать слишком обширным,
+                поскольку застоявшиеся в обороте продукты занимают место на небольшом по площади складе, замораживают
+                ваши оборотные активы, вы теряете деньги вследствие потерь по окончании срока годности. Важно не
+                закупать большое количество разной продукции в рамках выбранных вами: достаточно 2-3 позиций, к примеру,
+                молока с высокой оборачиваемостью вместо 5-10 для расширения.</p>
+            <h3
+                class="lg:text-[25px] md:text-[20px] text-[15px] font-semibold lg:max-w-[680px] md:max-w-[480px] max-w-full my-4">
+                Основные категории продуктов:</h3>
+            <ol type="1"
+                class="flex flex-col gap-3 lg:text-[15px] md:text-[13px] sm:text-[12px] text-[10px] xl:max-w-[850px] lg:max-w-[680px] md:max-w-[480px] max-w-full">
+                <li>1. Хлебобулочные изделия относятся к повседневному спросу. Разместить стоит в конце торгового зала,
+                    чтобы покупатель, следуя к витрине с ними, купил ещё какие-то незапланированные ранее вещи,
+                    зацепившись, что называется, взглядом по пути. Стоит обязательно включить для продажи такие виды,
+                    как обыкновенный хлеб, батоны, нарезанные белый и чёрный хлеб, бородинский хлеб. Добавьте в этот
+                    подвид различные хлебцы с высоким сроком годности. Выпечку в только что открывшийся магазин стоит
+                    включать в матрицу предлагаемого хлеба аккуратно, поскольку высока вероятность, что покупать её
+                    будут неохотно. Лучше не рисковать.</li>
+                <li>2. Овощи и фрукты. Отдел с ними оптимально разместить непосредственно около входа, чтобы покупатель
+                    мог
+                    без проблем выбрать , а затем взвесить выбранный товар. Из овощей обязательно предлагайте
+                    покупателям картофель, огурцы, свежую сезонную зелень, чеснок, различные виды капусты, морковь,
+                    помидоры и лук. Дополнительно можно добавить болгарский перец или иные овощи, которыми регулярно
+                    интересуются постоянные покупатели. Что касается фруктов: груши, яблоки, бананы, цитрусовые. На эти
+                    фрукты спрос есть круглогодично, поэтому под них стоит выделить место в соответствующем отделе.
+                    Летом нужно добавить различные бахчевые культуры. Замороженные овощи можно добавить в небольшом
+                    количестве, разместив их вместе с другой заморозкой в морозильном ларе. Летом, кстати, стоит
+                    отказаться от них совсем или размещать в ограниченном количестве: покупать их вряд ли будут,
+                    поскольку в широком доступе есть свежие продукты такого типа.
+                </li>
+                <li>3. Кондитерская продукция. Стоит обязательно иметь в ассортименте различные виды конфет: с желейной
+                    и
+                    фруктовой начинкой, грильяж, суфле, марципан (в фасовке или на развес), глазированные, обыкновенные
+                    пралине, трюфель и конфеты с начинкой с содержанием ликёра, ирис, карамель, шоколадные батончики,
+                    помадки, конфеты известных брендов в коробках. Оптимально включить в ассортимент товаров в магазине
+                    по 5-7 видов из каждой указанной категории. Что касается шоколада: стоит заказывать и размещать
+                    шоколадки известных брендов, популярных у потребителя. Важно представить клиентам выбор, включающий
+                    в себя как простой молочный или тёмный шоколад, так и шоколадки с различными добавками: орехами,
+                    изюмом, йогуртом и пр.</li>
+                <li>4. Ликёро-водочная продукция. Если позволяет лицензия, то важно представить водку, пользующуюся
+                    спросом
+                    по данным социологических опросов. Из безалкогольных напитков стоит рассмотреть ввод в ассортимент
+                    соков нескольких известных брендов, минеральной воды.</li>
+                <li>5. Молочная продукция. В ассортименте даже самого маленького продуктового магазина обязательно
+                    должны
+                    быть представлены несколько брендов и объемов молока, в том числе пастеризованного, кефира и иных
+                    подобных продуктов, сливочное масло и маргарин, сметана разных брендов и объёма, йогурты
+                    (обыкновенные и питьевые), глазированные сырки, несколько сортов «ходового» сыра (в том числе
+                    плавленых сырков). В летнее время обязательно включите в ассортимент несколько вариантов (до 10)
+                    мороженого: от обыкновенных стаканчиков и рожков до семейных пломбиров большого веса.</li>
+                <li>6. Колбасы и мясо. Важно подобрать оптимальные с учётом целевой аудитории варианты с учётом качества
+                    и
+                    цены на них. Варёная колбаса (не менее 10 позиций известных брендов с самыми популярными марками.
+                    При наличии среди покупателей людей с высоким покупательским спросом стоит большую часть продукции
+                    приобретать изготовленными по ГОСТ, при большей части покупателей с низким доходом выбирайте
+                    колбасные изделия, сделанные по ТУ. Можно представить совсем недорогие варианты продукции такого
+                    типа, изготовленные с добавкой заменителей натурального мяса. Стоит включить в ассортимент несколько
+                    видов сарделек, (развесные, фасованные), сосиски (не менее 5 видов), сервелаты и колбасы
+                    варёно-копчёного типа, полукопчёные и сырокопчёные колбасы (5-10 позиций), а также разнообразные
+                    мясные изделия (пастрому, свиную шею и грудинку, говяжьи продукты — не более 10-15 позиций).</li>
+                <li>7. Рыба. Несколько видов мороженой рыбы востребованных у населения, к примеру минтай или хек. Стоит
+                    дополнительно добавить ещё несколько видов копчёной рыбы в фасовке, пластиковую или полиэтиленовую
+                    тару с сельдью и другими видами солёной рыбы
+                </li>
+                <li>8. В качестве обязательных продуктов стоит использовать бакалейные товары (крупы, сахар и соль,
+                    растительное масло), яйца куриные нескольких основных категорий, приправы.</li>
+                <li>9. Кофе и чай. Обязательно используйте продукцию проверенных и известных брендов. Кроме
+                    гранулированного кофе можно добавить несколько позиций молотого и пакетированные варианты 3 в 1.
+                    Можно добавить в ассортимент данной категории какао и цикорий.</li>
+                <li>10. Стоит иметь в ассортименте несколько видов пакетированного и сухого корма для кошек и собак, а
+                    также
+                    нехитрый, но нужный в повседневном быту набор бытовой химии (порошки для стирки, мыло и гели для
+                    душа, моющие средства для посуды, туалетную бумагу и влажные салфетки, средства интимной гигиены,
+                    чистящие средства для сантехники, зубные пасты и щётки, губки и тряпки из микрофибры — в общем всё,
+                    то, что может экстренно закончиться дома в самый неподходящий для этого момент).</li>
+            </ol>
+            <h3
+                class="lg:text-[25px] md:text-[20px] text-[15px] font-semibold lg:max-w-[680px] md:max-w-[480px] max-w-full my-4">
+                Продуктовые минимаркеты</h3>
+            <p
+                class="lg:text-[15px] md:text-[13px] sm:text-[12px] text-[10px] xl:max-w-[850px] lg:max-w-[680px] md:max-w-[480px] max-w-full">
+                Обычно в ассортиментную матрицу стандартного минимаркета может входить до 2,5-3 тысяч товарных позиций
+                различных категорий. Основу могут составлять товары с низкими и средними ценами, предметы мелкого быта и
+                средства бытовой химии, которые могут понадобиться на повседневной основе. Важно помнить, что основной
+                целью покупателей, посещающих такую торговую точку, являются не массовые закупки, а возможность хотя бы
+                немного сэкономить деньги на привычных покупках различных товаров. Поэтому цены в таком магазине должны
+                примерно соответствовать тем, которые установлены на аналогичные товары в супермаркетах и крупных сетях.
+                Здесь многие обратят внимание на то, что бороться в плане ценообразования с сетевыми гипер- и
+                супермаркетами точно получится, однако помните о том, что есть огромное количество покупателей,
+                предпочитающих качественное обслуживание и комфорт при привычных покупках. Даже чуть завышенные в
+                сравнении с «Пятёрочкой», «Лентой» или «Окей» цены будут оправданы высокими стандартами взаимодействия
+                персонала торговой точки с покупателями.</p>
+            <img src="/assets/svg/image 4 (1).svg"
+                class="xl:max-w-[850px] lg:max-w-[680px] md:max-w-[480px] max-w-full my-3" alt="img">
+            <p
+                class="lg:text-[15px] md:text-[13px] sm:text-[12px] text-[10px] xl:max-w-[850px] lg:max-w-[680px] md:max-w-[480px] max-w-full">
+                При формировании ассортимента для минимаркета стоит просто поставить себя на место рядового покупателя,
+                опросить на эту тему своих родственников и близких людей. Что именно из товаров может понадобиться вам
+                каждый день? Нужен ли выбор условного молока из 2-3 десятков брендов и позиций или же стоит ограничиться
+                только самыми ходовыми товарами? Нужен ли широкий выбор хлебобулочных изделий или достаточно обеспечить
+                основные потребности покупателей?
+                Необходимо понимать, что торговая и складская площадь минимаркета просто не позволит вам размещать
+                большое количество различных брендов и обеспечивать максимальный выбор и его свободу во всех категориях
+                товаров. Минимаркет предназначен для обеспечения спроса в плане наличия различных товаров в большом
+                количестве категорий (по 3-4 известных бренда для возможности выбора и удовлетворения потребительского
+                спроса по максимуму). Широта и вариативность здесь на руку играть вам не будут, обеспечьте возможность
+                поиска того, что нужно, из известных и популярных брендов и производителей, которые «на слуху» у
+                большинства ваших потенциальных покупателей.
+                В подобных минимаркетах кроме продовольственных должны присутствовать сегменты, относящиеся к
+                непродовольственным категориям: массового потребления и средства бытовой химии, регулярно необходимые в
+                быту. По цене они должны быть низкой или средней цены, вы торгуете эконом-сегментом. Выбор в целом тот
+                же, что и в магазине у дома. Но стоит представить по 2-3 известных бренда, которые известны населению и
+                точно будут покупаться.
+                В товарную матрицу здесь можно дополнительно включить консервы (из мяса и рыбы, по 5-7 видов в каждом
+                виде продукции), полуфабрикаты различных типов и брендов, хозяйственные разнообразные изделия, небольшое
+                количество мелких детских игрушек и раскрасок. Если минимаркет находится в районе с большим количеством
+                офисных центров или студенческих общежитий (либо новостроек, где в большинстве своём живёт молодёжь), то
+                есть смысл добавить полуфабрикаты быстрого приготовления и блюда, которые можно оперативно приготовить в
+                микроволновке или духовом шкафу.</p>
+        </section>
+    </main>
+    <footer class=" bg-[#2C2B35] pt-8">
+        <div class="mx-auto max-w-[1400px] lg:gap-0 gap-10 2xl:px-0 xl:px-5 md:px-10 px-5 text-white flex flex-wrap md:flex-row flex-col lg:justify-between justify-start">
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-3 font-semibold text-[20px] text-white">
+                    <img src="/assets/svg/logo.svg" class="w-[30px]" alt="logo">
+                    1С-Товары
+                </div>
+                <div class="flex md:flex-row flex-col gap-6">
+                    <div class="">
+                        <p class="text-[#919999] text-[13px]">Линия консультации</p>
+                        <h2 class="text-[18px] font-semibold">+7(495)-111-00-10</h2>
+                    </div>
+                    <div class="">
+                        <p class="text-[#919999] text-[13px]">Наш e-mail</p>
+                        <h2 class="text-[18px] font-semibold">info@rozn.info</h2>
+                    </div>
+                    <div class="cursor-pointer bg-green_bg w-fit h-fit py-2 px-10 rounded-3xl">Заказать звонок</div>
+                </div>
+                <div class="">
+                    <p class="text-[15px]">Для активации перейдите на portal.1c.ru или обратитесь к Вашему партнеру 1С.
+                    </p>
+                    <a href="#" class="text-[#43A548] text-[12px]">Инструкция по установке сервиса</a>
+                </div>
+            </div>
+            <div>
+                <p class="text-[18px] font-semibold">Информация</p>
+                <div class="text-[13px] flex flex-col gap-3 mt-4">
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">Как это работает</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">Инструкции</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">Блог</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">О нас</p>
+                </div>
+            </div>
+            <div>
+                <p class="text-[18px] font-semibold">Продукты</p>
+                <div class="flex flex-col gap-3 text-[13px] mt-4">
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Ритейл Чекер Демо</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Товары.Тестовый для магазина на 1 месяц</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Ритейл Чекер</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Товары 300</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Товары 30000</p>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-[#494949] mt-5 flex items-center justify-between max-w-[1400px] xl:mx-auto 2xl:px-0 xl:px-5 md:mx-10 mx-5 py-3 text-[#919999]">
+            <p>1С-Товары © 2023</p>
+            <p>Сайт создан - wtstudio.ru</p>
+        </div>
+    </footer>
+    <script src="/js/accardion.js"></script>
+    <script src="/js/regex.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/assets/svg/image 1.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.2/dist/css/splide.min.css">
     <title>Rozn</title>
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="/src/style.css">
@@ -48,7 +49,7 @@
                     href="#">Инструкции</a>
                 <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]"
                     href="/public/product.html">Продукты</a>
-                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]" href="#">База
+                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]" href="/public/znaniy.html">База
                     знаний </a>
                 <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]" href="#">О
                     нас</a>
@@ -507,7 +508,7 @@
     </section>
     <section class="mt-10">
         <div
-            class="md:flex bg-transparent container max-w-[1400px] mx-auto px-10 md:justify-between md:items-center flex-wrap">
+            class="md:flex bg-transparent container max-w-[1400px] mx-auto px-10 md:justify-between md:items-center flex-wrap ">
             <div class="flex flex-col gap-12 ">
                 <img class="w-[400px]" src="/assets/image/Grocery shopping-amico 1.png" alt="dowland">
                 <img class="w-[400px]" src="/assets/image/Coffee shop-amico 1.png" alt="dowland">
@@ -793,7 +794,7 @@
                 </div>
             </section>
     </main>
-    <section>
+    <section class="sm:block hidden">
         <div class="bg-transparent container max-w-[1400px] mx-auto pt-10 md:flex md:justify-between md:items-center flex-wrap pb-10 ">
             <div class="max-w-sm rounded-xl overflow-hidden shadow-2xl">
                 <img class="w-full" src="/assets/svg/Rectangle 5.svg" alt="Card image">
@@ -836,6 +837,7 @@
             </div>
         </div>
     </section>
+    
     <main>
             <section class="mx-auto max-w-[1400px] mb-10">
                 <h3 class="my-6 lg:mx-0 md:mx-10 mx-5 font-semibold text-[25px]">Компании которые выбирают 1С-Товары</h3>
@@ -851,55 +853,55 @@
                 </div>
             </section>
     </main>
-    <section>
-        
-    </section>
-    <footer class="bg-[#2C2B35] text-white">
-        <div class="bg-transparent container max-w-[1400px] mx-auto md:flex md:items-center md:justify-between md:py-10 flex-wrap  px-10 py-10">
-            <div class="  text-white md:flex md:flex-col md:gap-7">
-                <div class="md:flex md:flex-col md:gap-7">
-                    <div>
-                        <a href="/index.html">
-                            <div class="flex items-center gap-2">
-                                <img src="/assets/svg/image 1.svg" class="lg:h-[30px] h-[20px]" alt="dowland">
-                                <span class="font-semibold lg:text-[19px] text-[15px]">1С-Товары</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="md:flex md:items-center  md:gap-3 flex flex-col gap-7 mt-6">
-                        <div>
-                            <p>Линия консультации</p>
-                            <p class="text-xl text-white hover:text-[#43A548]">+7(495)-111-00-10</p>
-                        </div>
-                        <div>
-                            <p>Наш e-mail</p>
-                            <p class="text-white hover:text-[#43A548]">info@rozn.info</p>
-                        </div>
-                        <div>
-                            <button class="py-2 px-5   bg-[#43A548] text-white font-semibold rounded-full shadow-md hover:bg-gradient-to-r hover:from-[#43A548] hover:to-[#52E259] translate-x-1 duration-300">
-                                Save changes
-                              </button>                       
-                        </div>
-                    </div>
+    <footer class=" bg-[#2C2B35] pt-8 mt-4">
+        <div class="mx-auto max-w-[1400px] lg:gap-0 gap-10 2xl:px-0 xl:px-5 md:px-10 px-5 text-white flex flex-wrap md:flex-row flex-col lg:justify-between justify-start">
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-3 font-semibold text-[20px] text-white">
+                    <img src="/assets/svg/logo.svg" class="w-[30px]" alt="logo">
+                    1С-Товары
                 </div>
-                <p>Для активации перейдите на <a href="https://portal.1c.ru/applications/1C-Goods" class="hover:text-[#43A548]">portal.1c.ru</a> или обратитесь к Вашему партнеру 1С.</p>
-                <p>Инструкция по установке сервиса</p>
+                <div class="flex md:flex-row flex-col gap-6">
+                    <div class="">
+                        <p class="text-[#919999] text-[13px]">Линия консультации</p>
+                        <h2 class="text-[18px] font-semibold">+7(495)-111-00-10</h2>
+                    </div>
+                    <div class="">
+                        <p class="text-[#919999] text-[13px]">Наш e-mail</p>
+                        <h2 class="text-[18px] font-semibold">info@rozn.info</h2>
+                    </div>
+                   <a href="/public/zakaz.html">
+                    <div  class="cursor-pointer bg-green_bg w-fit h-fit py-2 px-10 rounded-3xl">Заказать звонок</div>
+                   </a>
+                </div>
+                <div class="">
+                    <p class="text-[15px]">Для активации перейдите на portal.1c.ru или обратитесь к Вашему партнеру 1С.
+                    </p>
+                    <a href="#" class="text-[#43A548] text-[12px]">Инструкция по установке сервиса</a>
+                </div>
             </div>
-            <div class="flex flex-col gap-4">
-                <p class="text-2xl">Информация</p>
-                <a href="#">Как это работает</a>
-                <a href="#">Инструкции</a>
-                <a href="#">Блог</a>
-                <a href="#">О нас</a>
+            <div>
+                <p class="text-[18px] font-semibold">Информация</p>
+                <div class="text-[13px] flex flex-col gap-3 mt-4">
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">Как это работает</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">Инструкции</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">Блог</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">О нас</p>
+                </div>
             </div>
-            <div class="flex flex-col gap-4">
-                <p class="text-2xl">Продукты</p>
-                <a class="hover:text-[#43A548]" href="#">1С-Ритейл Чекер Демо</a>
-                <a class="hover:text-[#43A548]" href="#">1С-Товары.Тестовый для магазина на 1 месяц</a>
-                <a class="hover:text-[#43A548]" href="#">1С-Ритейл Чекер</a>
-                <a class="hover:text-[#43A548]" href="#">1С-Товары 300</a>
-                <a class="hover:text-[#43A548]" href="#">1С-Товары 30000</a>
+            <div>
+                <p class="text-[18px] font-semibold">Продукты</p>
+                <div class="flex flex-col gap-3 text-[13px] mt-4">
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Ритейл Чекер Демо</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Товары.Тестовый для магазина на 1 месяц</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Ритейл Чекер</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Товары 300</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Товары 30000</p>
+                </div>
             </div>
+        </div>
+        <div class="border-t border-[#494949] mt-5 flex items-center justify-between max-w-[1400px] xl:mx-auto 2xl:px-0 xl:px-5 md:mx-10 mx-5 py-3 text-[#919999]">
+            <p>1С-Товары © 2023</p>
+            <p>Сайт создан - wtstudio.ru</p>
         </div>
     </footer>
     <script>
@@ -909,8 +911,14 @@
             loader.style.display = "none"
         })
     </script>
+    <!-- Include Splide.js (from CDN or local path) -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.2/dist/js/splide.min.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/accardion.js"></script>
+    <script src="/js/card.js"></script>
 </body>
+
 
 </html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/svg/image 1.svg">
+    <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/output.css">
+    <title>Document</title>
+</head>
+<body class="bg-[#F7F8F8]">
+    <!-- <div id="preloader">
+        <iframe class="hidden" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="hidden" width="560"
+            height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="hidden" width="560"
+            height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="hidden" width="560"
+            height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="hidden" width="560"
+            height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div> -->
+    <header class="header bg-[#FFFFFF] sticky top-0 w-full">
+        <div class="container max-w-[1400px] mx-auto flex items-center justify-between px-5 md:py-5 py-3">
+            <div>
+                <a href="/index.html">
+                    <div class="flex items-center gap-2">
+                        <img src="/assets/svg/image 1.svg" class="lg:h-[30px] h-[20px]" alt="dowland">
+                        <span class="font-semibold lg:text-[19px] text-[15px]">1С-Товары</span>
+                    </div>
+                </a>
+            </div>
+            <div class="md:flex gap-7 items-center hidden">
+                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]" href="">Как
+                    это работает</a>
+                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]"
+                    href="#">Инструкции</a>
+                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]"
+                    href="/public/product.html">Продукты</a>
+                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]" href="#">База
+                    знаний </a>
+                <a class="hover:text-[#43A548] transition-all duration-300 lg:text-[18px] md:text-[13px]" href="#">О
+                    нас</a>
+                <a href="/index.html">
+                    <button
+                        class="lg:w-[150px] lg:h-[40px] w-[100px] h-[35px] lg:text-[18px] text-[15px] text-white font-semibold shadow-2xl rounded-full bg-gradient-to-r from-green-600  to-green-400 hover:from-green-700 hover:to-green-500 transition-all duration-300">
+                        Вход
+                    </button>
+                </a>
+            </div>
+            <button id="menu-toggle"
+                class="md:hidden flex p-2 text-gray-600 hover:text-green-500 transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu"
+            class="fixed  top-[-500px] left-0 flex justify-center items-center w-full h-[500px] bg-white shadow-md duration-300">
+            <div class="flex flex-col items-center py-5">
+                <div class="close cursor-pointer absolute top-5 right-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="30"
+                        height="30">
+                        <path
+                            d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+                        </path>
+                    </svg>
+                </div>
+                <a class="py-2 text-[15px] text-gray-700 hover:text-[#43A548]" href="#">Как это работает</a>
+                <a class="py-2 text-[15px] text-gray-700 hover:text-[#43A548]" href="#">Инструкции</a>
+                <a class="py-2 text-[15px] text-gray-700 hover:text-[#43A548]" href="/public/product.html">Продукты</a>
+                <a class="py-2 text-[15px] text-gray-700 hover:text-[#43A548]" href="#">База знаний</a>
+                <a class="py-2 text-[15px] text-gray-700 hover:text-[#43A548]" href="#">О нас</a>
+                <a href="#">
+                    <button
+                        class="w-[150px] h-[40px] mt-3 text-white font-semibold shadow-lg hover:shadow-2xl rounded-full bg-gradient-to-r from-green-600  to-green-400 hover:from-green-700 hover:to-green-500 transition-all duration-300">
+                        Вход
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="bg-gradient-to-r from-[#52E259] to-[#43A548]">
+        <section class="max-w-[1400px] mx-auto">
+            <h4 class="text-white text-[13px] xl:mx-5 md:mx-10 mx-5 font-normal pt-5">Главная - <span
+                    class="text-black"> Как это работает </span></h4>
+            <h2 class="text-white text-[25px] xl:mx-5 md:mx-10 mx-5 pb-5 pt-2 font-semibold"> Как это работает</h2>
+        </section>
+    </main>
+    <main class="flex justify-between md:flex-row flex-col max-w-[1400px] mx-auto mt-10">
+        <section class="2xl:m-0 lg:ml-5 md:ml-4 mx-4 md:my-0 my-2 ">
+            <div class="w-full mx-auto">
+                <div class="accordion  shadow-md rounded-md">
+                    <div class="border-b xl:w-[400px] lg:w-[300px] w-full">
+                        <button
+                            class="rounded rounded-t-md flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-white bg-gradient-to-r from-[#52E259] to-[#43A548] hover:bg-green-700 focus:outline-none">
+                            <span class="lg:text-[18px] text-[13px] flex items-center gap-2">
+                                <img src="/assets/svg/power-01.svg" alt="">
+                                С чего начать
+                            </span>
+                        </button>
+                    </div>
+                    <div class="border-b xl:w-[400px] lg:w-[300px] w-full">
+                        <button
+                            class="rounded rounded-t-md flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all hover:bg-gradient-to-r from-[#EBF5EB] to-[#EFFBF0] translate-x-0 duration-300 text-black bg-white focus:outline-none">
+                            <span class="lg:text-[18px] text-[13px] flex items-center gap-2">
+                                <img src="/assets/svg/Frame 444.svg" alt="">
+                                Заявки
+                            </span>
+                        </button>
+                    </div>
+                    <div class="border-b xl:w-[400px] lg:w-[300px] w-full">
+                        <button
+                            class="rounded rounded-t-md flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all hover:bg-gradient-to-r from-[#EBF5EB] to-[#EFFBF0] translate-x-0 duration-300 text-black bg-white focus:outline-none">
+                            <span class="lg:text-[18px] text-[13px] flex items-center gap-2">
+                                <img src="/assets/svg/Frame 444 (1).svg" alt="">
+                                Автоматизация магазина
+                            </span>
+                        </button>
+                    </div>
+                    <div class="border-b xl:w-[400px] lg:w-[300px] w-full">
+                        <button
+                            class="rounded rounded-t-md flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all hover:bg-gradient-to-r from-[#EBF5EB] to-[#EFFBF0] translate-x-0 duration-300 text-black bg-white focus:outline-none">
+                            <span class="lg:text-[18px] text-[13px] flex items-center gap-2">
+                                <img src="/assets/svg/check.svg" alt="">
+                                Управление ассортиментом
+                            </span>
+                        </button>
+                    </div>
+                    <div class="border-b xl:w-[400px] lg:w-[300px] w-full">
+                        <button
+                            class="rounded rounded-t-md flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all hover:bg-gradient-to-r from-[#EBF5EB] to-[#EFFBF0] translate-x-0 duration-300 text-black bg-white focus:outline-none">
+                            <span class="lg:text-[18px] text-[13px] flex items-center gap-2">
+                                <img src="/assets/svg/Frame 444 (2).svg" alt="">
+                                Прогноз продаж
+                            </span>
+                        </button>
+                    </div>
+                    <div class="border-b xl:w-[400px] lg:w-[300px] w-full">
+                        <button
+                            class="rounded rounded-t-md flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all hover:bg-gradient-to-r from-[#EBF5EB] to-[#EFFBF0] translate-x-0 duration-300 text-black bg-white focus:outline-none">
+                            <span class="lg:text-[18px] text-[13px] flex items-center gap-2">
+                                <img src="/assets/svg/Frame 444 (3).svg" alt="">
+                                Аналитика магазина
+                            </span>
+                        </button>
+                    </div>
+                    <div class="border-b xl:w-[400px] lg:w-[300px] w-full">
+                        <button
+                            class="rounded rounded-t-md flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all hover:bg-gradient-to-r from-[#EBF5EB] to-[#EFFBF0] translate-x-0 duration-300 text-black bg-white focus:outline-none">
+                            <span class="lg:text-[18px] text-[13px] flex items-center gap-2">
+                                <img src="/assets/svg/Frame 444 (4).svg" alt="">
+                                EDI: обмен документами
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="flex flex-col gap-4">
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-2xl">
+                    <img class="w-full" src="/assets/svg/Rectangle 5.svg" alt="Card image">
+                    <div class="px-6 py-4">
+                      <p class="text-gray-700 text-base">
+                        Методы и формулы расчета торговой наценки
+                      </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                      <a href="#" class="inline-block text-green-500 font-bold py-2 px-4 rounded">
+                        Читать статью
+                      </a>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-2xl">
+                    <img class="w-full" src="/assets/svg/Rectangle 5.svg" alt="Card image">
+                    <div class="px-6 py-4">
+                      <p class="text-gray-700 text-base">
+                        Методы и формулы расчета торговой наценки
+                      </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                      <a href="#" class="inline-block text-green-500 font-bold py-2 px-4 rounded">
+                        Читать статью
+                      </a>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-2xl">
+                    <img class="w-full" src="/assets/svg/Rectangle 5.svg" alt="Card image">
+                    <div class="px-6 py-4">
+                      <p class="text-gray-700 text-base">
+                        Методы и формулы расчета торговой наценки
+                      </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                      <a href="#" class="inline-block text-green-500 font-bold py-2 px-4 rounded">
+                        Читать статью
+                      </a>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-2xl">
+                    <img class="w-full" src="/assets/svg/Rectangle 5.svg" alt="Card image">
+                    <div class="px-6 py-4">
+                      <p class="text-gray-700 text-base">
+                        Методы и формулы расчета торговой наценки
+                      </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                      <a href="#" class="inline-block text-green-500 font-bold py-2 px-4 rounded">
+                        Читать статью
+                      </a>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-2xl">
+                    <img class="w-full" src="/assets/svg/Rectangle 5.svg" alt="Card image">
+                    <div class="px-6 py-4">
+                      <p class="text-gray-700 text-base">
+                        Методы и формулы расчета торговой наценки
+                      </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                      <a href="#" class="inline-block text-green-500 font-bold py-2 px-4 rounded">
+                        Читать статью
+                      </a>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-2xl">
+                    <img class="w-full" src="/assets/svg/Rectangle 5.svg" alt="Card image">
+                    <div class="px-6 py-4">
+                      <p class="text-gray-700 text-base">
+                        Методы и формулы расчета торговой наценки
+                      </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                      <a href="#" class="inline-block text-green-500 font-bold py-2 px-4 rounded">
+                        Читать статью
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="flex flex-col gap-4">
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-2xl">
+                    <img class="w-full" src="/assets/svg/Rectangle 5 (1).svg" alt="Card image">
+                    <div class="px-6 py-4">
+                      <p class="text-gray-700 text-base">
+                        Методы и формулы расчета торговой наценки
+                      </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                      <a href="#" class="inline-block text-green-500 font-bold py-2 px-4 rounded">
+                        Читать статью
+                      </a>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-2xl">
+                    <img class="w-full" src="/assets/svg/Rectangle 5 (1).svg" alt="Card image">
+                    <div class="px-6 py-4">
+                      <p class="text-gray-700 text-base">
+                        Методы и формулы расчета торговой наценки
+                      </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                      <a href="#" class="inline-block text-green-500 font-bold py-2 px-4 rounded">
+                        Читать статью
+                      </a>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-2xl">
+                    <img class="w-full" src="/assets/svg/Rectangle 5 (1).svg" alt="Card image">
+                    <div class="px-6 py-4">
+                      <p class="text-gray-700 text-base">
+                        Методы и формулы расчета торговой наценки
+                      </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                      <a href="#" class="inline-block text-green-500 font-bold py-2 px-4 rounded">
+                        Читать статью
+                      </a>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-2xl">
+                    <img class="w-full" src="/assets/svg/Rectangle 5 (1).svg" alt="Card image">
+                    <div class="px-6 py-4">
+                      <p class="text-gray-700 text-base">
+                        Методы и формулы расчета торговой наценки
+                      </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                      <a href="#" class="inline-block text-green-500 font-bold py-2 px-4 rounded">
+                        Читать статью
+                      </a>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-2xl">
+                    <img class="w-full" src="/assets/svg/Rectangle 5 (1).svg" alt="Card image">
+                    <div class="px-6 py-4">
+                      <p class="text-gray-700 text-base">
+                        Методы и формулы расчета торговой наценки
+                      </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                      <a href="#" class="inline-block text-green-500 font-bold py-2 px-4 rounded">
+                        Читать статью
+                      </a>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-2xl">
+                    <img class="w-full" src="/assets/svg/Rectangle 5 (1).svg" alt="Card image">
+                    <div class="px-6 py-4">
+                      <p class="text-gray-700 text-base">
+                        Методы и формулы расчета торговой наценки
+                      </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                      <a href="#" class="inline-block text-green-500 font-bold py-2 px-4 rounded">
+                        Читать статью
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="mt-10">
+        <div
+            class="bg-gradient-to-r from-[#43A548] to-[#52E259] w-[100%]  mb-10 py-10 text-white  md:flex bg-transparent container max-w-[1400px] mx-auto px-10 md:justify-between  md:rounded-2xl flex-wrap">
+            <div class="md:w-[400px] w-[300px] flex flex-col gap-5">
+                <p class="text-2xl font-semibold ">Хотите бесплатную консультацию?
+                    Оставляйте заявку</p>
+                <p>Оставляйте заявку и наши менеджеры свяжутся с Вами в ближайшее время </p>
+            </div>
+            <div class="w-[600px]">
+                <div class="flex flex-col gap-2 ">
+                    <label class="md:mt-4" for="#">Ваше имя</label>
+                    <input
+                        class="md:w-full w-[300px] h-[40px] shadow-lg rounded-3xl placeholder:pl-5 placeholder:text-black"
+                        class="md:w-full w-[300px] text-black px-4 h-[40px] outline-none shadow-lg rounded-3xl placeholder:pl-5 placeholder:text-black "
+                        type="text" placeholder="Сергей ">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="md:mt-4" for="#">Ваш телефон</label>
+                    <input
+                        class="md:w-full w-[300px] h-[40px] shadow-lg rounded-3xl placeholder:pl-5 placeholder:text-black"
+                        class="md:w-full w-[300px] h-[40px] text-black px-4 outline-none shadow-lg rounded-3xl placeholder:pl-5 placeholder:text-black"
+                        type="text" placeholder="Ваш телефон">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="md:mt-4" for="#">Ваш e-mail</label>
+                    <input
+                        class="md:w-full w-[300px] h-[40px] shadow-lg rounded-3xl placeholder:pl-5 placeholder:text-black"
+                        class="md:w-full w-[300px] h-[40px] shadow-lg text-black px-4  outline-none rounded-3xl placeholder:pl-5 placeholder:text-black"
+                        type="text" placeholder="Ваш e-mail">
+                </div>
+                <div class="md:flex md:justify-between md:items-center md:mt-6 ">
+                    <div class="md:w-full w-[300px] mb-10 mt-10">
+                        <p class="text-black text-xs ">Нажимая кнопку вы даете согласие на обработку персональных</p>
+                        <p class="text-black text-xs "> данных в соответствии с политикой конфиденциальности</p>
+                    </div>
+                    <a href="#">
+                        <button
+                            class="text-[#43A548] bg-white w-[200px] h-[40px] shadow-lg hover:shadow-2xl rounded-3xl ">Отправить</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="mx-auto max-w-[1400px]">
+            <h3 class="md:mb-10 mb-5 xl:mx-0 md:mx-10 mx-5 text-[20px] font-semibold">Ответы на вопросы</h3>
+            <div class="w-full mx-auto">
+                <div class="accordion flex flex-col gap-3 xl:mx-0 md:mx-10 mx-5 rounded-md">
+                    <div class="w-full">
+                        <button
+                            class="accordion-button md:rounded-3xl rounded-2xl flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-black bg-white border-2 border-[#ddd] focus:outline-none ">
+                            <span class="lg:text-[18px] text-[13px]">
+                                С чего начать
+                            </span>
+                            <img src="/assets/svg/Frame 312.svg" alt="#">
+                        </button>
+                        <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                            <h2 class="pb-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* (старые
+                                конфигурации)</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Фреш.
+                                Подключение 1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <button
+                            class="accordion-button md:rounded-3xl rounded-2xl flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-black bg-white border-2 border-[#ddd] focus:outline-none ">
+                            <span class="lg:text-[18px] text-[13px]">
+                                Заявки
+                            </span>
+                            <img src="../assets/svg/Frame 312.svg" alt="#">
+                        </button>
+                        <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                            <h2 class="pb-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* (старые
+                                конфигурации)</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Фреш.
+                                Подключение 1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <button
+                            class="accordion-button md:rounded-3xl rounded-2xl flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-black bg-white border-2 border-[#ddd] focus:outline-none ">
+                            <span class="lg:text-[18px] text-[13px]">
+                                Автоматизация магазина
+                            </span>
+                            <img src="../assets/svg/Frame 312.svg" alt="#">
+                        </button>
+                        <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                            <h2 class="pb-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* (старые
+                                конфигурации)</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Фреш.
+                                Подключение 1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <button
+                            class="accordion-button md:rounded-3xl rounded-2xl flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-black bg-white border-2 border-[#ddd] focus:outline-none ">
+                            <span class="lg:text-[18px] text-[13px]">
+                                Управление ассортиментом
+                            </span>
+                            <img src="../assets/svg/Frame 312.svg" alt="#">
+                        </button>
+                        <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                            <h2 class="pb-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* (старые
+                                конфигурации)</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Фреш.
+                                Подключение 1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <button
+                            class="accordion-button md:rounded-3xl rounded-2xl flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-black bg-white border-2 border-[#ddd] focus:outline-none ">
+                            <span class="lg:text-[18px] text-[13px]">
+                                Прогноз продаж
+                            </span>
+                            <img src="../assets/svg/Frame 312.svg" alt="#">
+                        </button>
+                        <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                            <h2 class="pb-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* (старые
+                                конфигурации)</h2>
+                            <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Фреш.
+                                Подключение 1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <button
+                            class="accordion-button md:rounded-3xl rounded-2xl flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-black bg-white border-2 border-[#ddd] focus:outline-none ">
+                            <span class="lg:text-[18px] text-[13px]">
+                                Аналитика магазина
+                            </span>
+                            <img src="../assets/svg/Frame 312.svg" alt="#">
+                        </button>
+                        <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                            <h2 class="pb-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                1С-Ритейл Чекер* и
+                                1С-Товары</h2>
+                                <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                    1С-Ритейл Чекер* (старые
+                                    конфигурации)</h2>
+                                <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Фреш.
+                                    Подключение 1С-Ритейл Чекер* и
+                                    1С-Товары</h2>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <button
+                                class="accordion-button md:rounded-3xl rounded-2xl rounded-b-md flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-black bg-white border-2 border-[#ddd] focus:outline-none">
+                                <span class="lg:text-[18px] text-[13px]">
+                                    EDI: обмен документами
+                                </span>
+                                <img src="../assets/svg/Frame 312.svg" alt="#">
+                            </button>
+                            <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                                <h2 class="pb-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                    1С-Ритейл Чекер* и
+                                    1С-Товары</h2>
+                                <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Подключение
+                                    1С-Ритейл Чекер* (старые
+                                    конфигурации)</h2>
+                                <h2 class="py-2 hover:text-green-500 cursor-pointer lg:text-[18px] text-[13px]">Фреш.
+                                    Подключение 1С-Ритейл Чекер* и
+                                    1С-Товары</h2>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gradient-to-b to-[#52E259] from-[#43A548] flex md:flex-row flex-col justify-center items-center text-white font-semibold md:gap-10 gap-4 py-3 max-w-[1400px] rounded-3xl">
+                            <h3 class="text-center md:text-15px text-[10px] md:font-semibold font-light md:p-0 px-5">Переходи в раздел “Как это работает” , что бы получить больше полезной информации</h3>
+                            <div
+                                class="bg-white text-black md:text-[14px] text-[10px] transition-all hover:text-white hover:bg-gradient-to-r to-[#52E259] from-[#43A548] md:font-semibold font-normal cursor-pointer rounded-3xl px-8 py-1">
+                                Как это работает
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer class=" bg-[#2C2B35] pt-8 mt-4">
+        <div class="mx-auto max-w-[1400px] lg:gap-0 gap-10 2xl:px-0 xl:px-5 md:px-10 px-5 text-white flex flex-wrap md:flex-row flex-col lg:justify-between justify-start">
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-3 font-semibold text-[20px] text-white">
+                    <img src="/assets/svg/logo.svg" class="w-[30px]" alt="logo">
+                    1С-Товары
+                </div>
+                <div class="flex md:flex-row flex-col gap-6">
+                    <div class="">
+                        <p class="text-[#919999] text-[13px]">Линия консультации</p>
+                        <h2 class="text-[18px] font-semibold">+7(495)-111-00-10</h2>
+                    </div>
+                    <div class="">
+                        <p class="text-[#919999] text-[13px]">Наш e-mail</p>
+                        <h2 class="text-[18px] font-semibold">info@rozn.info</h2>
+                    </div>
+                   <a href="/public/zakaz.html">
+                    <div  class="cursor-pointer bg-green_bg w-fit h-fit py-2 px-10 rounded-3xl">Заказать звонок</div>
+                   </a>
+                </div>
+                <div class="">
+                    <p class="text-[15px]">Для активации перейдите на portal.1c.ru или обратитесь к Вашему партнеру 1С.
+                    </p>
+                    <a href="#" class="text-[#43A548] text-[12px]">Инструкция по установке сервиса</a>
+                </div>
+            </div>
+            <div>
+                <p class="text-[18px] font-semibold">Информация</p>
+                <div class="text-[13px] flex flex-col gap-3 mt-4">
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">Как это работает</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">Инструкции</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">Блог</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">О нас</p>
+                </div>
+            </div>
+            <div>
+                <p class="text-[18px] font-semibold">Продукты</p>
+                <div class="flex flex-col gap-3 text-[13px] mt-4">
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Ритейл Чекер Демо</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Товары.Тестовый для магазина на 1 месяц</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Ритейл Чекер</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Товары 300</p>
+                    <p class="cursor-pointer duration-300 text-white hover:text-[#919999] font-normal">1С-Товары 30000</p>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-[#494949] mt-5 flex items-center justify-between max-w-[1400px] xl:mx-auto 2xl:px-0 xl:px-5 md:mx-10 mx-5 py-3 text-[#919999]">
+            <p>1С-Товары © 2023</p>
+            <p>Сайт создан - wtstudio.ru</p>
+        </div>
+    </footer>
+</body>
+</html>
